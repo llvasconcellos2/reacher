@@ -1,0 +1,516 @@
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	<html>
+		
+<!-- Mirrored from localhost:8080/form_mala.php?modo=update&id_mala=1 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2026 13:42:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=iso-8859-1" /><!-- /Added by HTTrack -->
+<head>
+			<title>Re@cher WebMailer</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+			<link href="estilo.css" rel="stylesheet" rev="stylesheet">
+			<script src='scripts/language/portugues/editor_lang.js'></script>
+			<script language=JavaScript src='scripts/moz/editor.js'></script>			<script language="JavaScript" src="menu.js"></script>
+			<script language="javascript">
+				var engwindow;
+				var i;
+				function engine(){
+					if(confirm("Deseja enviar todas as malas diretas para todos os segmentos cadastrados? Serão enviadas apenas as malas agendadas para o dia de hoje.")){
+						engwindow = window.open("roda_engine.html", "engwindow");
+						i = setTimeout(monitora_engine, 15000);	
+					}
+				}
+				function monitora_engine(){
+					//if(engwindow.document.readyState == "complete"){
+						//alert("Envio Terminado!");
+						//clearInterval(i);
+						alert("As malas diretas selecionadas para hoje foram colocadas na fila de envio.\r\nAo término do processo você receberá um email de notificação.");
+						self.location = 'browser_malas.html';
+						engwindow.close();
+					//}
+				}
+			</script>
+		</head>
+		<body>
+			<table width="100%" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" border="0">
+				<tr>
+					<td colspan="3"><img src="imagens/cabecalho.jpg"></td>
+					<td background="imagens/extensao_cabecalho.jpg">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="330" height="30" background="imagens/rodape_cabecalho_1.gif">&nbsp;</td>
+					<td width="44" background="imagens/rodape_cabecalho_2.jpg">&nbsp;</td>
+					<td width="376" background="imagens/rodape_cabecalho_3.gif">
+						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td align="center" width="100"><a class="menu_horizontal" href="#" onMouseOver="mostramenu('menu_1'); ">Mala&nbsp;Direta</a></td>
+								<td align="center"><img src="imagens/divisor.gif"></td>
+								<td align="center" width="100"><a class="menu_horizontal" href="#" onMouseOver="mostramenu('menu_2'); ">Cadastros</a></td>
+								<td align="center"><img src="imagens/divisor.gif"></td>
+								<td align="center" width="100"><a class="menu_horizontal" href="configuracoes.html">Configurações</a></td>
+								<td align="center"><img src="imagens/divisor.gif"></td>
+								<td align="center" width="50">&nbsp;</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="trans_menu" style="z-index: 1000; height: 0px; overflow:hidden; position: absolute; visibility: hidden;" id="menu_1" onMouseOver="start('menu_1');" onMouseOut="saiu = 1;">
+										<div style="width: 100px; height: 16px;"></div>
+										<table cellpadding="2" cellspacing="0" border="0" bgcolor="#EFF2F5" style="filter: progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=5);  border: solid 1px #CADAE9;">
+											<tr>
+												<td></td>
+												<td></td>
+												<td><div style="font-size:3px;">&nbsp;</div></td>
+												<td></td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="form_mala.html"><img border="0" align="absmiddle" src="imagens/icone_mala_pq.gif"></a></td>
+												<td><a class="menu" href="form_mala.html">Nova&nbsp;Mala&nbsp;Direta</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="browser_malas.html"><img border="0" align="absmiddle" src="imagens/icone_browser_mala_pq.gif"></a></td>
+												<td><a class="menu" href="browser_malas.html">Malas&nbsp;Já&nbsp;Criadas</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="#" onClick="engine();"><img border="0" align="absmiddle" src="imagens/engine.gif"></a></td>
+												<td><a class="menu" href="#" onClick="engine();">Enviar&nbsp;Malas&nbsp;Agendadas&nbsp;Para&nbsp;Hoje</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td><div style="font-size:2px;">&nbsp;</div></td>
+												<td></td>
+											</tr>
+										</table>
+									</div>
+								</td>
+								<td></td>
+								<td>
+									<div class="trans_menu" style="z-index: 1000; height: 0px; overflow:hidden; position: absolute; visibility: hidden;" id="menu_2" onMouseOver="start('menu_2');" onMouseOut="saiu = 1;">
+										<div style="width: 100px; height: 16px;"></div>
+										<table cellpadding="2" cellspacing="0" border="0" bgcolor="#EFF2F5" style="filter: progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=5);  border: solid 1px #CADAE9;">
+											<tr>
+												<td></td>
+												<td></td>
+												<td><div style="font-size:3px;">&nbsp;</div></td>
+												<td></td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="browser_instituicoes.html"><img border="0" align="absmiddle" src="imagens/icone_instituicao_pq.gif"></a></td>
+												<td><a class="menu" href="browser_instituicoes.html">Instituições</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="browser_pessoas.html"><img border="0" align="absmiddle" src="imagens/icone_pessoa_pq.gif"></a></td>
+												<td><a class="menu" href="browser_pessoas.html">Pessoas</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="browser_segmentos.html"><img border="0" align="absmiddle" src="imagens/icone_segmento_pq.gif"></a></td>
+												<td><a class="menu" href="browser_segmentos.html">Segmentos&nbsp;de&nbsp;Mercado</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="browser_modelos.html"><img border="0" align="absmiddle" src="imagens/icone_modelo_pq.gif"></a></td>
+												<td><a class="menu" href="browser_modelos.html">Modelos&nbsp;de&nbsp;Mala&nbsp;Direta</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="browser_lembretes.html"><img border="0" align="absmiddle" src="imagens/icone_cal_pq.gif"></a></td>
+												<td><a class="menu" href="browser_lembretes.html">Lembretes</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="form_import.html"><img border="0" align="absmiddle" src="imagens/database_up_pq.gif"></a></td>
+												<td><a class="menu" href="form_import.html">Importação</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td><div style="font-size:2px;">&nbsp;</div></td>
+												<td></td>
+											</tr>
+										</table>
+									</div>
+								</td>
+								<td></td>
+								<td><div class="trans_menu" id="menu_3" onMouseOver="start();" onMouseOut="saiu = 1;"></div></td>
+								<td></td>
+								<td width="50"></td>
+							</tr>
+							<tr>
+								<td colspan="5" height="5"></td> 
+							</tr>
+						</table>
+					</td>
+					<td background="imagens/rodape_cabecalho_3.gif">&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan="3" width="750">
+		<table width="100%" border="0">
+		<tr>
+			<td width="10">&nbsp;</td>
+			<td width="50"><a href="#" onClick="window.history.back();"><img title="Voltar" border="0" src="imagens/voltar.gif"></a></td>
+			<td width="10">&nbsp;</td>
+			<td align="left" valign="top">
+				<div style="font-family: Arial; font-size: 16px; font-weight: bold; position: absolute; color:#CCCCCC; z-index: 0; margin-top: 7px; margin-left: 2px;">Cadastro de Mala Direta</div>
+				<div style="font-family: Arial; font-size: 16px; font-weight: bold; position: absolute; color:#0057F4; z-index:10; margin-top: 5px; margin-left: 0px;">Cadastro de Mala Direta</div>
+			</td>
+			<td width="30"><a href="home.html"><img title="Pagina Inicial" border="0" src="imagens/home.gif"></a></td>
+			<td width="22"><a href="logout.html"><img title="Sair do Sistema" border="0" src="imagens/logout.gif"></a></td>
+		</tr>
+	</table>
+	<hr>
+	<br><br>
+	<table width="100%">
+	<tr>
+		<td align="center" valign="top">
+				<table cellpadding="0" cellspacing="0" border="0" width="100%">
+		<tr>
+			<td width="30" height="28" background="imagens/canto_sup_esq_quadro_branco.gif"></td>
+			<td background="imagens/lateral_sup_quadro_branco.gif" valign="top">
+				<span style="font-size:9px;">&nbsp;</span><br>
+				Formulário de Cadastro			</td>
+			<td width="29" background="imagens/canto_sup_dir_quadro_branco.gif"></td>
+		</tr>
+		<tr>
+			<td width="30" background="imagens/lateral_esq_quadro_branco.gif"></td>
+			<td bgcolor="#FFFFFF">
+					<script language="JavaScript" src="calendar1.js"></script>
+				<script language="JavaScript" src="data.js"></script>
+				<script language="javascript" type="text/javascript">
+					function valida_form() {
+						var f = document.forms[0];
+						if(f.nome_mala.value == ""){
+							alert("Informe um nome para identificar a mala direta.");
+							return false;
+						}
+						if(f.remetente_mala.value == ""){
+							alert("Informe um email de remetente.");
+							return false;
+						}
+						if(!checkEmail(f.remetente_mala.value)) return false;
+						f.html_mala.value = oEdit1.getHTMLBody();
+						return true;
+					}
+					function checkEmail(email) {
+						if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)){
+							return (true)
+						}
+						alert("Email incorreto.")
+						return (false)
+					}
+					function aplicar_estilo(){
+						var e = unescape(document.forms[0].css_mala.value);
+						if(e.length>0){
+							self.oEdit1.document.styleSheets[0].cssText = e;
+							self.oEdit1.document.styleSheets[0].cssText += "\nBODY {border: 1px black solid;border-top: none;}";
+						}
+					}
+					function edita_css(){
+						var d = document.getElementById("box_css");
+						var s = document.getElementById("seta_verde");
+						
+						if(d.style.height == "0px") d.style.height = "";
+						else d.style.height = "0px";
+						
+						if(d.style.overflow == "hidden") d.style.overflow = "";
+						else d.style.overflow = "hidden";
+						
+						if(d.style.visibility == "hidden") d.style.visibility = "visible";
+						else d.style.visibility = "hidden";
+						
+						if(d.style.visibility == "hidden") s.src = "imagens/seta_verde_direita.gif";
+						else s.src = "imagens/seta_verde_baixo.gif";
+					}
+					function apagar(id){
+						if(confirm("Deseja remover este mala direta do sistema?"))
+							window.location = 'salva_malaff36.html?modo=apagar&amp;pagina=&amp;id_mala=' + id + '';
+					}
+					function envia_outlook(){
+						if(confirm("Deseja enviar esta mala direta utilizando o seu Microsoft Outlook?\r\nEsta opção só funciona com o Microsoft Internet Explorer e o Microsoft Outlook 2007")){
+							var janela = window.open('engine_outlook1585.html?id_mala=1','WindowEnviaOutook','height=200,width=400,menubar=no,resizable=yes,scrollbars=yes,left=100,top=100,status=yes,toolbar=no');
+						}
+					}
+				</script>
+				<table width="98%" cellpadding="2" cellspacing="2" border="0">
+					<form action="../external.html?link=http://localhost:8080/salva_mala.php" method="post" onSubmit="return valida_form();">
+						
+					<input type="hidden" name="html_mala" value=''>
+					<input type="hidden" name="css_mala" value=''>
+										<tr>
+						<td class="label">Nome:</td>
+						<td style="text-align: left;">
+							<input type="text" class="input_text" name="nome_mala" maxlength="50" value="Boticário">
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="label">Email Remetente:</td>
+						<td style="text-align: left;">
+							<input type="text" class="input_text" name="remetente_mala" maxlength="255" value="reacher@reacher.com.br">
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="label">Assunto:</td>
+						<td style="text-align: left;">
+							<input type="text" class="input_text" name="assunto_mala" maxlength="100" value="Promoção Boticário">
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="label">Data:</td>
+						<td style="text-align: left;">
+							<input type="text" class="input_text" name="data_mala" value="02/07/2026" maxlength="10" onKeypress="return ajustar_data(this,event);" >
+						</td>
+						<td width="5%" align="right"><a href="javascript: cal1.popup();"><img src="imagens/cal.gif" border="0" alt="Escolha a data para o envio."></a></td>
+					</tr>
+					<tr>
+						<td colspan="3" class="label" style="text-align: left;">Editor HTML Online</td>
+					</tr>
+					<tr>
+						<td colspan="3" height="400">
+						<script language=JavaScript src='scripts/moz/editor.js'></script><pre id="temp_conteudo" name="temp_conteudo" style="display:none">&lt;meta charset=&quot;UTF-8&quot;&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;&lt;title&gt;O Botic&Atilde;&iexcl;rio - boti PROMO&lt;/title&gt;&lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;background-color:#e6e6e6;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td align=&quot;center&quot; style=&quot;padding:24px 12px;&quot;&gt;&lt;table role=&quot;presentation&quot; width=&quot;600&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;width:600px; max-width:600px; background-color:#ffffff;&quot;&gt;&lt;!--Logo--&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td align=&quot;center&quot; style=&quot;padding:24px 0 16px 0;&quot;&gt;&lt;img src=&quot;img/boticario-logo.png&quot; width=&quot;160&quot; alt=&quot;O Botic&Atilde;&iexcl;rio&quot; style=&quot;display:block; border:0;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;!--Nav--&gt;&lt;tr&gt;&lt;td style=&quot;background-color:#f5f5f5; padding:14px 10px;&quot;&gt;&lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td align=&quot;center&quot; style=&quot;font-size:12px; letter-spacing:.5px; color:#204758; font-weight:bold;&quot;&gt;PERFUMARIA &amp;nbsp;&amp;nbsp; LAN&Ccedil;AMENTOS &amp;nbsp;&amp;nbsp; PRESENTES &amp;nbsp;&amp;nbsp; MAIS VENDIDOS&lt;span style=&quot;color:#00a163;&quot;&gt;PROMO&Ccedil;&Otilde;ES&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;!--Frete Gratis bar--&gt;&lt;tr&gt;&lt;td align=&quot;center&quot; style=&quot;background-color:#204758; padding:18px 10px;&quot;&gt;&lt;span style=&quot;font-size:20px; font-weight:bold; color:#abcf64;&quot;&gt;Frete Gr&aacute;tis&lt;/span&gt;&lt;span style=&quot;font-size:20px; color:#ffffff;&quot;&gt;acima de R$ 139&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;!--Hero promo--&gt;&lt;tr&gt;&lt;td style=&quot;background:linear-gradient(135deg,#ff8a63,#ff4f6c); background-color:#ff6b6e; padding:28px 24px;&quot;&gt;&lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td valign=&quot;top&quot; width=&quot;55%&quot; style=&quot;padding-right:12px;&quot;&gt;&lt;div style=&quot;font-size:30px; font-style:italic; font-weight:bold; color:#ffffff; font-family:Georgia, 'Times New Roman', serif;&quot;&gt;boti&lt;span style=&quot;color:#abcf64;&quot;&gt;&amp;#9829;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size:34px; font-weight:900; color:#ffffff; letter-spacing:1px; margin-top:-6px; font-family:Arial Black, Arial, sans-serif;&quot;&gt;PROMO&lt;/div&gt;&lt;div style=&quot;font-size:13px; color:#ffffff; line-height:1.5; margin-top:10px;&quot;&gt;Sua aliada na realiza&ccedil;&atilde;o das suas&lt;strong&gt;metas de in&iacute;cio de ano&lt;/strong&gt;com foco no&lt;strong&gt;bem-estar e autocuidado!&lt;/strong&gt;&lt;/div&gt;&lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;margin-top:18px;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background-color:#ff4658; border-radius:50%; width:78px; height:78px; color:#ffffff; font-weight:bold; text-align:center; line-height:1.1;&quot;&gt;&lt;span style=&quot;font-size:11px; display:block;&quot;&gt;COM AT&Eacute;&lt;/span&gt;&lt;span style=&quot;font-size:22px; display:block;&quot;&gt;50%&lt;/span&gt;&lt;span style=&quot;font-size:11px; display:block;&quot;&gt;OFF&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;div style=&quot;font-size:13px; font-weight:bold; color:#ffffff; margin-top:14px;&quot;&gt;+ de 600 itens participantes&lt;/div&gt;&lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;margin-top:16px;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td align=&quot;center&quot; bgcolor=&quot;#ffffff&quot; style=&quot;border-radius:20px; padding:10px 26px;&quot;&gt;&lt;a href=&quot;#&quot; style=&quot;font-size:13px; font-weight:bold; color:#204758; text-decoration:none;&quot;&gt;EU QUERO ›&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;td valign=&quot;middle&quot; width=&quot;45%&quot; align=&quot;right&quot;&gt;&lt;img src=&quot;img/boticario-products.png&quot; width=&quot;220&quot; alt=&quot;Produtos em promo&ccedil;&atilde;o&quot; style=&quot;display:block; border:0; max-width:100%;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;!--Category section--&gt;&lt;tr&gt;&lt;td style=&quot;background-color:#204758; padding:26px 16px;&quot;&gt;&lt;div style=&quot;text-align:center; color:#ffffff; font-size:18px; margin-bottom:18px;&quot;&gt;APROVEITE&lt;strong&gt;POR CATEGORIA!&lt;/strong&gt;&lt;/div&gt;&lt;table role=&quot;presentation&quot; width=&quot;100%&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td align=&quot;center&quot; width=&quot;20%&quot; style=&quot;padding:0 4px;&quot;&gt;&lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;border:1px solid #ffffff; border-radius:8px; overflow:hidden;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/boticario-icon-perfumaria.png&quot; width=&quot;100%&quot; alt=&quot;Perfumaria&quot; style=&quot;display:block; border:0;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot; bgcolor=&quot;#ff4658&quot; style=&quot;padding:8px 2px; font-size:10px; font-weight:bold; color:#ffffff;&quot;&gt;PERFUMARIA&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; width=&quot;20%&quot; style=&quot;padding:0 4px;&quot;&gt;&lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;border:1px solid #ffffff; border-radius:8px; overflow:hidden;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/boticario-icon-skincare.png&quot; width=&quot;100%&quot; alt=&quot;Skincare&quot; style=&quot;display:block; border:0;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot; bgcolor=&quot;#abcf64&quot; style=&quot;padding:8px 2px; font-size:10px; font-weight:bold; color:#204758;&quot;&gt;SKINCARE&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; width=&quot;20%&quot; style=&quot;padding:0 4px;&quot;&gt;&lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;border:1px solid #ffffff; border-radius:8px; overflow:hidden;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/boticario-icon-corpo-banho.png&quot; width=&quot;100%&quot; alt=&quot;Corpo e Banho&quot; style=&quot;display:block; border:0;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot; bgcolor=&quot;#ff7767&quot; style=&quot;padding:8px 2px; font-size:10px; font-weight:bold; color:#ffffff;&quot;&gt;CORPO E BANHO&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; width=&quot;20%&quot; style=&quot;padding:0 4px;&quot;&gt;&lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;border:1px solid #ffffff; border-radius:8px; overflow:hidden;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/boticario-icon-cabelos.png&quot; width=&quot;100%&quot; alt=&quot;Cabelos&quot; style=&quot;display:block; border:0;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot; bgcolor=&quot;#ff7487&quot; style=&quot;padding:8px 2px; font-size:10px; font-weight:bold; color:#ffffff;&quot;&gt;CABELOS&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; width=&quot;20%&quot; style=&quot;padding:0 4px;&quot;&gt;&lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;border:1px solid #ffffff; border-radius:8px; overflow:hidden;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;img/boticario-icon-maquiagem.png&quot; width=&quot;100%&quot; alt=&quot;Maquiagem&quot; style=&quot;display:block; border:0;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot; bgcolor=&quot;#00bba6&quot; style=&quot;padding:8px 2px; font-size:10px; font-weight:bold; color:#ffffff;&quot;&gt;MAQUIAGEM&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;!--Footer CTA--&gt;&lt;tr&gt;&lt;td align=&quot;center&quot; style=&quot;background:linear-gradient(135deg,#ff8a63,#ff4f6c); background-color:#ff6b6e; padding:30px 20px;&quot;&gt;&lt;div style=&quot;font-size:16px; color:#ffffff;&quot;&gt;FIQUE POR DENTRO DE&lt;/div&gt;&lt;div style=&quot;font-size:22px; font-weight:bold; color:#ffffff; margin-top:4px; margin-bottom:18px;&quot;&gt;TODAS AS PROMO&Ccedil;&Otilde;ES!&lt;/div&gt;&lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td align=&quot;center&quot; bgcolor=&quot;#abcf64&quot; style=&quot;border-radius:18px; padding:12px 28px;&quot;&gt;&lt;a href=&quot;#&quot; style=&quot;font-size:13px; font-weight:bold; color:#204758; text-decoration:none;&quot;&gt;CLIQUE PARA CONFERIR ›&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</pre><script>
+var oEdit1 = new InnovaEditor("oEdit1");
+oEdit1.css="dincssf0ea.html?oque=mala&amp;id=1";
+oEdit1.width="100%";
+oEdit1.height="400px";
+oEdit1.btnFlash=true;
+oEdit1.btnMedia=true;
+oEdit1.cmdAssetManager='';
+oEdit1.RENDER(document.getElementById("temp_conteudo").innerHTML);
+</script>						</td>
+					</tr>
+										<tr>
+						<td class="label" colspan="2">
+							<fieldset>
+								<legend><b>Status da Mala Direta</b></legend>
+								<table width="100%">
+									<tr>
+										<td width="30%" class="label">Agendada para envio</td>
+										<td><input type="radio" name="status_mala" value="1" checked></td>
+										<td width="5%">&nbsp;</td>
+										<td width="30%" class="label">Em Processamento</td>
+										<td><input type="radio" name="status_mala" value="3"></td>
+										<td width="5%">&nbsp;</td>
+										<td width="30%" class="label">Enviada</td>
+										<td><input type="radio" name="status_mala" value="2"></td>
+									</tr>
+								</table>
+							</fieldset>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<hr>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="label" style="text-align: left;"><a href="Javascript: edita_css();" class="menu" style="color:#000000;"><img border="0" id="seta_verde" align="absmiddle" src="imagens/seta_verde_direita.gif">Alternativas de Envio</a></td>
+					</tr>
+					<tr>
+						<td align="right" colspan="2">
+							<div id="box_css" style="text-width: 100%; height: 0px; overflow: hidden; visibility: hidden;">
+								<fieldset>
+									<legend><b>Envio para destinatários avulsos</b></legend>
+									<table width="100%">
+										<tr>
+											<td class="label" valign="top" width="20%">Destinatários:</td>
+											<td style="text-align: left;">
+												<textarea class="input_text" style="background-image:none;" rows="3" title="Emails separados por ponto e vírgula" name="destinatarios"></textarea>
+											</td>
+											<td valign="top" width="5%"><a href="javascript: envia_manual();"><img src="imagens/sendmail.gif" border="0" alt="Enviar manualmente"></a></td>
+										</tr>
+									</table>
+								</fieldset>
+								<hr />
+								<fieldset>
+									<legend><b>Envio de Mala Direta usando Microsoft Office Outlook</b></legend>
+									<table width="100%">
+										<tr>
+											<td class="label" valign="middle" width="100">Destinatários/Envio:</td>
+											<td style="text-align: left;" width="50">
+												<input type="text" class="input_text" name="qtd_outlook" value="20" maxlength="5">
+											</td>
+											<td class="label" valign="middle" width="100">Pré-visualizar:</td>
+											<td style="text-align: left;" width="50">
+												<input type="checkbox" name="preview_outlook" checked="checked">
+											</td>
+											<td class="label" valign="middle" width="50">Enviar:</td>
+											<td style="text-align: left;">
+												<input type="checkbox" name="envio_outlook" checked="checked">
+											</td>
+											<td class="label" valign="middle" width="150">Alterar Status para Enviada?</td>
+											<td style="text-align: left;">
+												<input type="checkbox" name="envio_outlook_altera_status" checked="checked">
+											</td>
+											<td valign="top" width="5%"><a href="javascript: envia_outlook();"><img src="imagens/sendoutlook.gif" border="0" alt="Enviar usando Microsoft Oulook"></a></td>
+										</tr>
+									</table>
+								</fieldset>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<hr>
+						</td>
+					</tr>
+														</table>
+						</td>
+			<td width="29" background="imagens/lateral_dir_quadro_branco.gif"></td>
+		</tr>
+		<tr>
+			<td width="30" height="27" background="imagens/canto_inf_esq_quadro_branco.gif"></td>
+			<td background="imagens/lateral_inf_quadro_branco.gif"></td>
+			<td width="29" height="27" background="imagens/canto_inf_dir_quadro_branco.gif"></td>
+		</tr>
+	</table>
+				<br>
+				<table cellpadding="0" cellspacing="0" border="0" width="100%">
+		<tr>
+			<td width="30" height="28" background="imagens/canto_sup_esq_quadro_branco.gif"></td>
+			<td background="imagens/lateral_sup_quadro_branco.gif" valign="top">
+				<span style="font-size:9px;">&nbsp;</span><br>
+				Segmentos de Mercado			</td>
+			<td width="29" background="imagens/canto_sup_dir_quadro_branco.gif"></td>
+		</tr>
+		<tr>
+			<td width="30" background="imagens/lateral_esq_quadro_branco.gif"></td>
+			<td bgcolor="#FFFFFF">
+				<table width="100%" border="0">
+				<tr><td width="2%"><input type="checkbox" name="segmento_1" checked></td><td width="40%" align="left">Textil</td><td width="6%"></td><td width="2%"><input type="checkbox" name="segmento_2" checked></td><td width="40%" align="left">Movéis</td></tr><tr><td width="2%"><input type="checkbox" name="segmento_3" checked></td><td width="40%" align="left">Geral</td><td width="6%"></td>			</table>
+						</td>
+			<td width="29" background="imagens/lateral_dir_quadro_branco.gif"></td>
+		</tr>
+		<tr>
+			<td width="30" height="27" background="imagens/canto_inf_esq_quadro_branco.gif"></td>
+			<td background="imagens/lateral_inf_quadro_branco.gif"></td>
+			<td width="29" height="27" background="imagens/canto_inf_dir_quadro_branco.gif"></td>
+		</tr>
+	</table>
+				<br>
+				<table cellpadding="0" cellspacing="0" border="0" width="100%">
+		<tr>
+			<td width="30" height="28" background="imagens/canto_sup_esq_quadro_branco.gif"></td>
+			<td background="imagens/lateral_sup_quadro_branco.gif" valign="top">
+				<span style="font-size:9px;">&nbsp;</span><br>
+				Grava Informações			</td>
+			<td width="29" background="imagens/canto_sup_dir_quadro_branco.gif"></td>
+		</tr>
+		<tr>
+			<td width="30" background="imagens/lateral_esq_quadro_branco.gif"></td>
+			<td bgcolor="#FFFFFF">
+				<table width="100%">
+				<tr>
+					<td align="right">
+						<input type="button" value="Pré-Visualizar" class="botao_aqua" onClick="window.open('previsualizarf879.html?tipo=mala&amp;id=1');">&nbsp;&nbsp;
+						<input type="button" value="Apagar" class="botao_aqua" onclick="apagar(1);">&nbsp;<input type="submit" value="Salvar" class="botao_aqua">					</td>
+				</tr>
+			</table>
+						</td>
+			<td width="29" background="imagens/lateral_dir_quadro_branco.gif"></td>
+		</tr>
+		<tr>
+			<td width="30" height="27" background="imagens/canto_inf_esq_quadro_branco.gif"></td>
+			<td background="imagens/lateral_inf_quadro_branco.gif"></td>
+			<td width="29" height="27" background="imagens/canto_inf_dir_quadro_branco.gif"></td>
+		</tr>
+	</table>
+	<input type="hidden" name="modo" value="update"><input type="hidden" name="id_mala" value="1">			</form>
+				<table cellpadding="0" cellspacing="0" border="0" width="100%">
+		<tr>
+			<td width="30" height="48" background="imagens/canto_sup_esq_quadro_azul.gif"></td>
+			<td background="imagens/lateral_sup_quadro_azul.gif" valign="top">
+				<div style="width:100%; height: 23px;">&nbsp;</div>
+				Mala Direta			</td>
+			<td width="29" background="imagens/canto_sup_dir_quadro_azul.gif"></td>
+		</tr>
+		<tr>
+			<td width="30" background="imagens/lateral_esq_quadro_azul.gif"></td>
+			<td bgcolor="#FFFFFF">
+				<div style="width: 100%; text-align:justify;">
+				<img align="absmiddle" src="imagens/info.gif">
+				&nbsp;Este formul&aacute;rio cria a p&aacute;gina que ser&aacute; enviada no email da mala direta. &Eacute; possivel definir uma data posterior para o envio dos emails.
+				<hr>
+				<img align="absmiddle" src="imagens/atencao.gif">
+				&nbsp;Para ser poss&iacute;vel o envio de emails personalizados, com o nome do destinat&aacute;rio, ser&aacute; necess&aacute;rio a inclus&atilde;o da palavra chave <font color="#FF0000">(*nome*)</font> dentro do corpo da mensagem toda a vez que desejar se referir ao nome do destinat&aacute;rio. O sistema ent&atilde;o, automaticamente, substituir&aacute; o a palavra chave pelo nome de cada destinat&aacute;rio do email.
+				<hr><br><br><br>
+				<center>
+					<table width="80%">
+
+						<tr>
+							<td align="center" valign="top" width="25%"><a title="Clique para adicionar uma nova instituição" href="form_instituicao.html"><img border="0" align="absmiddle" src="imagens/icone_instituicao_mais.gif"></a></td>
+							<td align="center" valign="top" width="25%"><a title="Clique para adicionar uma nova pessoa" href="form_pessoa.html"><img border="0" align="absmiddle" src="imagens/icone_pessoa_mais.gif"></a></td>
+							<td align="center" valign="top" width="25%"><a title="Clique para adicionar um novo segmento de mercado" href="form_segmento.html"><img border="0" align="absmiddle" src="imagens/icone_segmento_mais.gif"></a></td>
+							<td align="center" valign="top" width="25%"><a title="Clique para adicionar um novo modelo de mala direta" href="form_modelo.html"><img border="0" align="absmiddle" src="imagens/icone_modelo_mais.gif"></a></td>
+						</tr>
+						<tr>
+							<td align="center" valign="top">Nova Institui&ccedil;&atilde;o</td>
+							<td align="center" valign="top">Nova Pessoa</td>
+							<td align="center" valign="top">Novo Segmento de Mercado</td>
+							<td align="center" valign="top">Novo Modelo de Mala Direta</td>
+						</tr>
+					</table>
+				</center>
+			</div>
+						</td>
+			<td width="29" background="imagens/lateral_dir_quadro_azul.gif"></td>
+		</tr>
+		<tr>
+			<td width="30" height="90" background="imagens/canto_inf_esq_quadro_azul.jpg"></td>
+			<td background="imagens/lateral_inf_quadro_azul.jpg"></td>
+			<td width="29" height="90" background="imagens/canto_inf_dir_quadro_azul.jpg"></td>
+		</tr>
+	</table>
+			</td>
+	</tr>
+</table>
+<form method="post" target="WindowEnviaManual" action="../external.html?link=http://localhost:8080/engine_manual.php" onSubmit="if (!buttonClicked) return false">
+	<input type="hidden" name="dest" />
+	<input type="hidden" name="id_mala" value="1" />
+</form>
+<script language="javascript">
+	var buttonClicked=false;
+	var cal1 = new calendar1(document.forms[0].elements['data_mala']);
+	cal1.year_scroll = true;
+	cal1.time_comp = false;
+	document.forms[0].elements[2].focus();
+	function envia_manual(){
+		if(confirm("Deseja enviar esta mala direta para os endereços do campo 'Destinatários'?")){
+			document.forms[1].dest.value = document.forms[0].destinatarios.value;
+			myOpenWindow();
+			buttonClicked=true;
+			setTimeout('document.forms[1].submit()',500);
+		}
+	}
+	function myOpenWindow() {
+		myWindowHandle = window.open('about:blank','WindowEnviaManual','height=200,width=400,menubar=no,resizable=no,scrollbars=no,left=100,top=100,status=no,toolbar=no');
+	}
+</script>
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan="3" height="46" background="imagens/rodape.jpg" align="center">
+						Desenvolvido por <a href="https://leonardo-vasconcellos.vercel.app/">Leonardo Lima de Vasconcellos</a>
+					</td>
+					<td height="46" background="imagens/rodape.jpg">&nbsp;</td>
+				</tr>
+			</table>
+		</body>
+	
+<!-- Mirrored from localhost:8080/form_mala.php?modo=update&id_mala=1 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2026 13:42:12 GMT -->
+</html>
+	

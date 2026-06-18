@@ -1,0 +1,215 @@
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	<html>
+		
+<!-- Mirrored from localhost:8080/salva_mala.php?modo=apagar&pagina=&id_mala= by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2026 13:43:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=iso-8859-1" /><!-- /Added by HTTrack -->
+<head>
+			<title>Re@cher WebMailer</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+			<link href="estilo.css" rel="stylesheet" rev="stylesheet">
+			<script src='scripts/language/portugues/editor_lang.js'></script>
+			<script language=JavaScript src='scripts/moz/editor.js'></script>			<script language="JavaScript" src="menu.js"></script>
+			<script language="javascript">
+				var engwindow;
+				var i;
+				function engine(){
+					if(confirm("Deseja enviar todas as malas diretas para todos os segmentos cadastrados? Serão enviadas apenas as malas agendadas para o dia de hoje.")){
+						engwindow = window.open("roda_engine.html", "engwindow");
+						i = setTimeout(monitora_engine, 15000);	
+					}
+				}
+				function monitora_engine(){
+					//if(engwindow.document.readyState == "complete"){
+						//alert("Envio Terminado!");
+						//clearInterval(i);
+						alert("As malas diretas selecionadas para hoje foram colocadas na fila de envio.\r\nAo término do processo você receberá um email de notificação.");
+						self.location = 'browser_malas.html';
+						engwindow.close();
+					//}
+				}
+			</script>
+		</head>
+		<body>
+			<table width="100%" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" border="0">
+				<tr>
+					<td colspan="3"><img src="imagens/cabecalho.jpg"></td>
+					<td background="imagens/extensao_cabecalho.jpg">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="330" height="30" background="imagens/rodape_cabecalho_1.gif">&nbsp;</td>
+					<td width="44" background="imagens/rodape_cabecalho_2.jpg">&nbsp;</td>
+					<td width="376" background="imagens/rodape_cabecalho_3.gif">
+						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td align="center" width="100"><a class="menu_horizontal" href="#" onMouseOver="mostramenu('menu_1'); ">Mala&nbsp;Direta</a></td>
+								<td align="center"><img src="imagens/divisor.gif"></td>
+								<td align="center" width="100"><a class="menu_horizontal" href="#" onMouseOver="mostramenu('menu_2'); ">Cadastros</a></td>
+								<td align="center"><img src="imagens/divisor.gif"></td>
+								<td align="center" width="100"><a class="menu_horizontal" href="configuracoes.html">Configurações</a></td>
+								<td align="center"><img src="imagens/divisor.gif"></td>
+								<td align="center" width="50">&nbsp;</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="trans_menu" style="z-index: 1000; height: 0px; overflow:hidden; position: absolute; visibility: hidden;" id="menu_1" onMouseOver="start('menu_1');" onMouseOut="saiu = 1;">
+										<div style="width: 100px; height: 16px;"></div>
+										<table cellpadding="2" cellspacing="0" border="0" bgcolor="#EFF2F5" style="filter: progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=5);  border: solid 1px #CADAE9;">
+											<tr>
+												<td></td>
+												<td></td>
+												<td><div style="font-size:3px;">&nbsp;</div></td>
+												<td></td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="form_mala.html"><img border="0" align="absmiddle" src="imagens/icone_mala_pq.gif"></a></td>
+												<td><a class="menu" href="form_mala.html">Nova&nbsp;Mala&nbsp;Direta</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="browser_malas.html"><img border="0" align="absmiddle" src="imagens/icone_browser_mala_pq.gif"></a></td>
+												<td><a class="menu" href="browser_malas.html">Malas&nbsp;Já&nbsp;Criadas</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="#" onClick="engine();"><img border="0" align="absmiddle" src="imagens/engine.gif"></a></td>
+												<td><a class="menu" href="#" onClick="engine();">Enviar&nbsp;Malas&nbsp;Agendadas&nbsp;Para&nbsp;Hoje</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td><div style="font-size:2px;">&nbsp;</div></td>
+												<td></td>
+											</tr>
+										</table>
+									</div>
+								</td>
+								<td></td>
+								<td>
+									<div class="trans_menu" style="z-index: 1000; height: 0px; overflow:hidden; position: absolute; visibility: hidden;" id="menu_2" onMouseOver="start('menu_2');" onMouseOut="saiu = 1;">
+										<div style="width: 100px; height: 16px;"></div>
+										<table cellpadding="2" cellspacing="0" border="0" bgcolor="#EFF2F5" style="filter: progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=5);  border: solid 1px #CADAE9;">
+											<tr>
+												<td></td>
+												<td></td>
+												<td><div style="font-size:3px;">&nbsp;</div></td>
+												<td></td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="browser_instituicoes.html"><img border="0" align="absmiddle" src="imagens/icone_instituicao_pq.gif"></a></td>
+												<td><a class="menu" href="browser_instituicoes.html">Instituições</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="browser_pessoas.html"><img border="0" align="absmiddle" src="imagens/icone_pessoa_pq.gif"></a></td>
+												<td><a class="menu" href="browser_pessoas.html">Pessoas</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="browser_segmentos.html"><img border="0" align="absmiddle" src="imagens/icone_segmento_pq.gif"></a></td>
+												<td><a class="menu" href="browser_segmentos.html">Segmentos&nbsp;de&nbsp;Mercado</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="browser_modelos.html"><img border="0" align="absmiddle" src="imagens/icone_modelo_pq.gif"></a></td>
+												<td><a class="menu" href="browser_modelos.html">Modelos&nbsp;de&nbsp;Mala&nbsp;Direta</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="browser_lembretes.html"><img border="0" align="absmiddle" src="imagens/icone_cal_pq.gif"></a></td>
+												<td><a class="menu" href="browser_lembretes.html">Lembretes</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="form_import.html"><img border="0" align="absmiddle" src="imagens/database_up_pq.gif"></a></td>
+												<td><a class="menu" href="form_import.html">Importação</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td><div style="font-size:2px;">&nbsp;</div></td>
+												<td></td>
+											</tr>
+										</table>
+									</div>
+								</td>
+								<td></td>
+								<td><div class="trans_menu" id="menu_3" onMouseOver="start();" onMouseOut="saiu = 1;"></div></td>
+								<td></td>
+								<td width="50"></td>
+							</tr>
+							<tr>
+								<td colspan="5" height="5"></td> 
+							</tr>
+						</table>
+					</td>
+					<td background="imagens/rodape_cabecalho_3.gif">&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan="3" width="750">
+		<table width="100%" border="0">
+		<tr>
+			<td width="10">&nbsp;</td>
+			<td width="50"><a href="#" onClick="window.history.back();"><img title="Voltar" border="0" src="imagens/voltar.gif"></a></td>
+			<td width="10">&nbsp;</td>
+			<td align="left" valign="top">
+				<div style="font-family: Arial; font-size: 16px; font-weight: bold; position: absolute; color:#CCCCCC; z-index: 0; margin-top: 7px; margin-left: 2px;">Erro ao processar informações!</div>
+				<div style="font-family: Arial; font-size: 16px; font-weight: bold; position: absolute; color:#0057F4; z-index:10; margin-top: 5px; margin-left: 0px;">Erro ao processar informações!</div>
+			</td>
+			<td width="30"><a href="home.html"><img title="Pagina Inicial" border="0" src="imagens/home.gif"></a></td>
+			<td width="22"><a href="logout.html"><img title="Sair do Sistema" border="0" src="imagens/logout.gif"></a></td>
+		</tr>
+	</table>
+	<hr>
+	<br><br>
+	<center>	<table cellpadding="0" cellspacing="0" border="0" width="500">
+		<tr>
+			<td width="30" height="28" background="imagens/canto_sup_esq_quadro_branco.gif"></td>
+			<td background="imagens/lateral_sup_quadro_branco.gif" valign="top">
+				<span style="font-size:9px;">&nbsp;</span><br>
+				Atenção!			</td>
+			<td width="29" background="imagens/canto_sup_dir_quadro_branco.gif"></td>
+		</tr>
+		<tr>
+			<td width="30" background="imagens/lateral_esq_quadro_branco.gif"></td>
+			<td bgcolor="#FFFFFF">
+				<table width="100%">
+				<tr>
+					<td><img src="imagens/atencao.jpg"></td>
+					<td class="conteudo_quadro_branco">Erro ao atualizar registros no Banco de dados: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1</td>
+				</tr>
+							</table>
+				</td>
+			<td width="29" background="imagens/lateral_dir_quadro_branco.gif"></td>
+		</tr>
+		<tr>
+			<td width="30" height="27" background="imagens/canto_inf_esq_quadro_branco.gif"></td>
+			<td background="imagens/lateral_inf_quadro_branco.gif"></td>
+			<td width="29" height="27" background="imagens/canto_inf_dir_quadro_branco.gif"></td>
+		</tr>
+	</table>
+	</center>					</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan="3" height="46" background="imagens/rodape.jpg" align="center">
+						Desenvolvido por <a href="https://leonardo-vasconcellos.vercel.app/">Leonardo Lima de Vasconcellos</a>
+					</td>
+					<td height="46" background="imagens/rodape.jpg">&nbsp;</td>
+				</tr>
+			</table>
+		</body>
+	
+<!-- Mirrored from localhost:8080/salva_mala.php?modo=apagar&pagina=&id_mala= by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2026 13:43:42 GMT -->
+</html>
+	

@@ -1,0 +1,298 @@
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	<html>
+		
+<!-- Mirrored from localhost:8080/browser_malas.php?&organizar=data_mala&sentido=ASC&filtro= by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2026 13:43:55 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=iso-8859-1" /><!-- /Added by HTTrack -->
+<head>
+			<title>Re@cher WebMailer</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+			<link href="estilo.css" rel="stylesheet" rev="stylesheet">
+			<script src='scripts/language/portugues/editor_lang.js'></script>
+			<script language=JavaScript src='scripts/moz/editor.js'></script>			<script language="JavaScript" src="menu.js"></script>
+			<script language="javascript">
+				var engwindow;
+				var i;
+				function engine(){
+					if(confirm("Deseja enviar todas as malas diretas para todos os segmentos cadastrados? Serão enviadas apenas as malas agendadas para o dia de hoje.")){
+						engwindow = window.open("roda_engine.html", "engwindow");
+						i = setTimeout(monitora_engine, 15000);	
+					}
+				}
+				function monitora_engine(){
+					//if(engwindow.document.readyState == "complete"){
+						//alert("Envio Terminado!");
+						//clearInterval(i);
+						alert("As malas diretas selecionadas para hoje foram colocadas na fila de envio.\r\nAo término do processo você receberá um email de notificação.");
+						self.location = 'browser_malas.html';
+						engwindow.close();
+					//}
+				}
+			</script>
+		</head>
+		<body>
+			<table width="100%" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" border="0">
+				<tr>
+					<td colspan="3"><img src="imagens/cabecalho.jpg"></td>
+					<td background="imagens/extensao_cabecalho.jpg">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="330" height="30" background="imagens/rodape_cabecalho_1.gif">&nbsp;</td>
+					<td width="44" background="imagens/rodape_cabecalho_2.jpg">&nbsp;</td>
+					<td width="376" background="imagens/rodape_cabecalho_3.gif">
+						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td align="center" width="100"><a class="menu_horizontal" href="#" onMouseOver="mostramenu('menu_1'); ">Mala&nbsp;Direta</a></td>
+								<td align="center"><img src="imagens/divisor.gif"></td>
+								<td align="center" width="100"><a class="menu_horizontal" href="#" onMouseOver="mostramenu('menu_2'); ">Cadastros</a></td>
+								<td align="center"><img src="imagens/divisor.gif"></td>
+								<td align="center" width="100"><a class="menu_horizontal" href="configuracoes.html">Configurações</a></td>
+								<td align="center"><img src="imagens/divisor.gif"></td>
+								<td align="center" width="50">&nbsp;</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="trans_menu" style="z-index: 1000; height: 0px; overflow:hidden; position: absolute; visibility: hidden;" id="menu_1" onMouseOver="start('menu_1');" onMouseOut="saiu = 1;">
+										<div style="width: 100px; height: 16px;"></div>
+										<table cellpadding="2" cellspacing="0" border="0" bgcolor="#EFF2F5" style="filter: progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=5);  border: solid 1px #CADAE9;">
+											<tr>
+												<td></td>
+												<td></td>
+												<td><div style="font-size:3px;">&nbsp;</div></td>
+												<td></td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="form_mala.html"><img border="0" align="absmiddle" src="imagens/icone_mala_pq.gif"></a></td>
+												<td><a class="menu" href="form_mala.html">Nova&nbsp;Mala&nbsp;Direta</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="browser_malas.html"><img border="0" align="absmiddle" src="imagens/icone_browser_mala_pq.gif"></a></td>
+												<td><a class="menu" href="browser_malas.html">Malas&nbsp;Já&nbsp;Criadas</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="#" onClick="engine();"><img border="0" align="absmiddle" src="imagens/engine.gif"></a></td>
+												<td><a class="menu" href="#" onClick="engine();">Enviar&nbsp;Malas&nbsp;Agendadas&nbsp;Para&nbsp;Hoje</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td><div style="font-size:2px;">&nbsp;</div></td>
+												<td></td>
+											</tr>
+										</table>
+									</div>
+								</td>
+								<td></td>
+								<td>
+									<div class="trans_menu" style="z-index: 1000; height: 0px; overflow:hidden; position: absolute; visibility: hidden;" id="menu_2" onMouseOver="start('menu_2');" onMouseOut="saiu = 1;">
+										<div style="width: 100px; height: 16px;"></div>
+										<table cellpadding="2" cellspacing="0" border="0" bgcolor="#EFF2F5" style="filter: progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=5);  border: solid 1px #CADAE9;">
+											<tr>
+												<td></td>
+												<td></td>
+												<td><div style="font-size:3px;">&nbsp;</div></td>
+												<td></td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="browser_instituicoes.html"><img border="0" align="absmiddle" src="imagens/icone_instituicao_pq.gif"></a></td>
+												<td><a class="menu" href="browser_instituicoes.html">Instituições</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="browser_pessoas.html"><img border="0" align="absmiddle" src="imagens/icone_pessoa_pq.gif"></a></td>
+												<td><a class="menu" href="browser_pessoas.html">Pessoas</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="browser_segmentos.html"><img border="0" align="absmiddle" src="imagens/icone_segmento_pq.gif"></a></td>
+												<td><a class="menu" href="browser_segmentos.html">Segmentos&nbsp;de&nbsp;Mercado</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="browser_modelos.html"><img border="0" align="absmiddle" src="imagens/icone_modelo_pq.gif"></a></td>
+												<td><a class="menu" href="browser_modelos.html">Modelos&nbsp;de&nbsp;Mala&nbsp;Direta</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="browser_lembretes.html"><img border="0" align="absmiddle" src="imagens/icone_cal_pq.gif"></a></td>
+												<td><a class="menu" href="browser_lembretes.html">Lembretes</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="form_import.html"><img border="0" align="absmiddle" src="imagens/database_up_pq.gif"></a></td>
+												<td><a class="menu" href="form_import.html">Importação</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td><div style="font-size:2px;">&nbsp;</div></td>
+												<td></td>
+											</tr>
+										</table>
+									</div>
+								</td>
+								<td></td>
+								<td><div class="trans_menu" id="menu_3" onMouseOver="start();" onMouseOut="saiu = 1;"></div></td>
+								<td></td>
+								<td width="50"></td>
+							</tr>
+							<tr>
+								<td colspan="5" height="5"></td> 
+							</tr>
+						</table>
+					</td>
+					<td background="imagens/rodape_cabecalho_3.gif">&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan="3" width="750">
+		<table width="100%" border="0">
+		<tr>
+			<td width="10">&nbsp;</td>
+			<td width="50"><a href="#" onClick="window.history.back();"><img title="Voltar" border="0" src="imagens/voltar.gif"></a></td>
+			<td width="10">&nbsp;</td>
+			<td align="left" valign="top">
+				<div style="font-family: Arial; font-size: 16px; font-weight: bold; position: absolute; color:#CCCCCC; z-index: 0; margin-top: 7px; margin-left: 2px;">Malas Diretas Cadastradas</div>
+				<div style="font-family: Arial; font-size: 16px; font-weight: bold; position: absolute; color:#0057F4; z-index:10; margin-top: 5px; margin-left: 0px;">Malas Diretas Cadastradas</div>
+			</td>
+			<td width="30"><a href="home.html"><img title="Pagina Inicial" border="0" src="imagens/home.gif"></a></td>
+			<td width="22"><a href="logout.html"><img title="Sair do Sistema" border="0" src="imagens/logout.gif"></a></td>
+		</tr>
+	</table>
+	<hr>
+	<br><br>
+		<table cellpadding="0" cellspacing="0" border="0" width="100%">
+		<tr>
+			<td width="30" height="28" background="imagens/canto_sup_esq_quadro_branco.gif"></td>
+			<td background="imagens/lateral_sup_quadro_branco.gif" valign="top">
+				<span style="font-size:9px;">&nbsp;</span><br>
+							</td>
+			<td width="29" background="imagens/canto_sup_dir_quadro_branco.gif"></td>
+		</tr>
+		<tr>
+			<td width="30" background="imagens/lateral_esq_quadro_branco.gif"></td>
+			<td bgcolor="#FFFFFF">
+		<table width="100%" cellpadding="2" cellspacing="2" border="0">
+		<form action="../external.html?link=http://localhost:8080/browser_malas.php" method="post">
+		<tr>
+			<td width="80" align="center">
+				<a title="Clique para adicionar um novo modelo" href="form_mala.html">
+					<img border="0" align="absmiddle" src="imagens/icone_mala_mais.gif">
+				</a>
+				<br>
+				<span style="font-size:9px;">Nova Mala Direta</span>
+			</td>
+			<td width="100" class="label">Busca:</td>
+			<td width="200"><input type="text" name="busca" class="input_text" value=""></td>
+			<td width="100">
+				<select name="organizar">
+					<option value="nome_mala">Nome</option>
+					<option value="css_mala">CSS</option>
+					<option value="html_mala">HTML</option>
+					<option value="data_mala" selected>Data</option>
+				</select>
+			</td>
+			<td width="20"><input type="image" src="imagens/lupa.gif"></td>
+			<td>&nbsp;</td>
+		</tr>
+		</form>
+	</table>
+			</td>
+			<td width="29" background="imagens/lateral_dir_quadro_branco.gif"></td>
+		</tr>
+		<tr>
+			<td width="30" height="27" background="imagens/canto_inf_esq_quadro_branco.gif"></td>
+			<td background="imagens/lateral_inf_quadro_branco.gif"></td>
+			<td width="29" height="27" background="imagens/canto_inf_dir_quadro_branco.gif"></td>
+		</tr>
+	</table>
+	<script language="javascript">
+	function apagar(id){
+		if(confirm("Deseja remover este mala direta do sistema?"))
+			window.location = 'salva_malaff36.html?modo=apagar&amp;pagina=&amp;id_mala=' + id + '';
+	}
+	function alterar_status(id, status){
+		if(confirm("Deseja modificar o status desta mala direta?"))
+			window.location = 'salva_mala2379.html?modo=alterar_status&amp;pagina=&amp;id_mala=' + id + '&status_mala=' + status + '';
+	}
+</script>
+	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+		<tr>
+			<td width="30" height="28" background="imagens/canto_sup_esq_quadro_branco.gif"></td>
+			<td background="imagens/lateral_sup_quadro_branco.gif" valign="top">
+				<span style="font-size:9px;">&nbsp;</span><br>
+							</td>
+			<td width="29" background="imagens/canto_sup_dir_quadro_branco.gif"></td>
+		</tr>
+		<tr>
+			<td width="30" background="imagens/lateral_esq_quadro_branco.gif"></td>
+			<td bgcolor="#FFFFFF">
+			<DIV ID="dek"></DIV>
+		<script language="javascript" src="infobox.js"></script>
+		<BR>
+		<table width="100%" class="conteudo_quadro_claro" border="0" cellpadding="2" cellspacing="0">
+			<tr style="background-color:#A6C1DC;">
+									<td width="3%" align="left">
+						<span class="cabec_tabela_browser">&nbsp;</span>					</td>
+									<td width="5%" align="left">
+						<span class="cabec_tabela_browser">&nbsp;</span>					</td>
+									<td width="26%" align="left">
+						<a class="cabec_tabela_browser" href="browser_malas4e09.html?&amp;organizar=nome_mala&amp;sentido=DESC&amp;filtro=">Nome</a>					</td>
+									<td width="15%" align="left">
+						<a class="cabec_tabela_browser" style="color: #00FFFF;" href="browser_malas2ece.html?&amp;organizar=data_mala&amp;sentido=DESC&amp;filtro=">Data&nbsp;<img border="0" align="absmiddle" src="imagens/sentido_asc.gif"></a>					</td>
+									<td width="20%" align="left">
+						<a class="cabec_tabela_browser" href="browser_malas38ef.html?&amp;organizar=css_mala&amp;sentido=DESC&amp;filtro=">CSS</a>					</td>
+									<td width="20%" align="left">
+						<a class="cabec_tabela_browser" href="browser_malasef6a.html?&amp;organizar=html_mala&amp;sentido=DESC&amp;filtro=">HTML</a>					</td>
+									<td width="4%" align="center">
+						<a class="cabec_tabela_browser" href="browser_malas0366.html?&amp;organizar=status_mala&amp;sentido=DESC&amp;filtro=">Status</a>					</td>
+									<td width="4%" align="right">
+						<span class="cabec_tabela_browser">&nbsp;</span>					</td>
+							</tr>
+			<tr>
+				<td colspan="8">&nbsp;</td>
+			</tr>
+								<tr style="background-color: #E6EDF7;" onMouseOver="this.style.backgroundColor = '#BACAEB';" onMouseOut="this.style.backgroundColor = '#E6EDF7';">
+					<td align="left" valign="top"><a title="Editar" href="form_mala26c0.html?modo=update&amp;id_mala=1"><img border="0" src="imagens/editar.gif"></a></td><td align="left" valign="top"><a title="Copiar" href="#"><img border="0" src="imagens/copiar.gif"></a></td><td align="left" valign="top">Boticário</td><td align="left" valign="top">02/07/2026</td><td align="left" valign="top"><xmp></xmp></td><td align="left" valign="top"><xmp><meta charset="UTF-8"><meta name="viewport" conten</xmp></td><td align="center" valign="top"><a href="javascript: alterar_status(1,2);"><img border="0" title="Mala Direta agendada para envio" src="imagens/icone_email_agendado.gif"></a></td><td align="right" valign="top"><a href="javascript: apagar(1);"><img border="0" src="imagens/lixeira.gif"></a></td></tr>					<tr onMouseOver="this.style.backgroundColor = '#BACAEB';" onMouseOut="this.style.backgroundColor = '';">
+					<td align="left" valign="top"><a title="Editar" href="form_malad17a.html?modo=update&amp;id_mala=2"><img border="0" src="imagens/editar.gif"></a></td><td align="left" valign="top"><a title="Copiar" href="#"><img border="0" src="imagens/copiar.gif"></a></td><td align="left" valign="top">FutFanatics</td><td align="left" valign="top">02/07/2026</td><td align="left" valign="top"><xmp></xmp></td><td align="left" valign="top"><xmp><meta charset="UTF-8"><meta name="viewport" conten</xmp></td><td align="center" valign="top"><a href="javascript: alterar_status(2,2);"><img border="0" title="Mala Direta agendada para envio" src="imagens/icone_email_agendado.gif"></a></td><td align="right" valign="top"><a href="javascript: apagar(2);"><img border="0" src="imagens/lixeira.gif"></a></td></tr>		</table><br><div style="text-align:right;"><span style="color:#FF0000">2</span>&nbsp;Registros Encontrados</div>
+		<br>
+		<div style="width: 100%; text-align: center;">
+					</div>
+				</td>
+			<td width="29" background="imagens/lateral_dir_quadro_branco.gif"></td>
+		</tr>
+		<tr>
+			<td width="30" height="27" background="imagens/canto_inf_esq_quadro_branco.gif"></td>
+			<td background="imagens/lateral_inf_quadro_branco.gif"></td>
+			<td width="29" height="27" background="imagens/canto_inf_dir_quadro_branco.gif"></td>
+		</tr>
+	</table>
+	<script language="javascript">
+	document.forms[0].elements[0].focus();
+</script>
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan="3" height="46" background="imagens/rodape.jpg" align="center">
+						Desenvolvido por <a href="https://leonardo-vasconcellos.vercel.app/">Leonardo Lima de Vasconcellos</a>
+					</td>
+					<td height="46" background="imagens/rodape.jpg">&nbsp;</td>
+				</tr>
+			</table>
+		</body>
+	
+<!-- Mirrored from localhost:8080/browser_malas.php?&organizar=data_mala&sentido=ASC&filtro= by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2026 13:43:55 GMT -->
+</html>
+	

@@ -1,0 +1,319 @@
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	<html>
+		
+<!-- Mirrored from localhost:8080/browser_pessoas.php?pagina=3&organizar=apagar&filtro= by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2026 13:43:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=iso-8859-1" /><!-- /Added by HTTrack -->
+<head>
+			<title>Re@cher WebMailer</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+			<link href="estilo.css" rel="stylesheet" rev="stylesheet">
+			<script src='scripts/language/portugues/editor_lang.js'></script>
+			<script language=JavaScript src='scripts/moz/editor.js'></script>			<script language="JavaScript" src="menu.js"></script>
+			<script language="javascript">
+				var engwindow;
+				var i;
+				function engine(){
+					if(confirm("Deseja enviar todas as malas diretas para todos os segmentos cadastrados? Serão enviadas apenas as malas agendadas para o dia de hoje.")){
+						engwindow = window.open("roda_engine.html", "engwindow");
+						i = setTimeout(monitora_engine, 15000);	
+					}
+				}
+				function monitora_engine(){
+					//if(engwindow.document.readyState == "complete"){
+						//alert("Envio Terminado!");
+						//clearInterval(i);
+						alert("As malas diretas selecionadas para hoje foram colocadas na fila de envio.\r\nAo término do processo você receberá um email de notificação.");
+						self.location = 'browser_malas.html';
+						engwindow.close();
+					//}
+				}
+			</script>
+		</head>
+		<body>
+			<table width="100%" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" border="0">
+				<tr>
+					<td colspan="3"><img src="imagens/cabecalho.jpg"></td>
+					<td background="imagens/extensao_cabecalho.jpg">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="330" height="30" background="imagens/rodape_cabecalho_1.gif">&nbsp;</td>
+					<td width="44" background="imagens/rodape_cabecalho_2.jpg">&nbsp;</td>
+					<td width="376" background="imagens/rodape_cabecalho_3.gif">
+						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td align="center" width="100"><a class="menu_horizontal" href="#" onMouseOver="mostramenu('menu_1'); ">Mala&nbsp;Direta</a></td>
+								<td align="center"><img src="imagens/divisor.gif"></td>
+								<td align="center" width="100"><a class="menu_horizontal" href="#" onMouseOver="mostramenu('menu_2'); ">Cadastros</a></td>
+								<td align="center"><img src="imagens/divisor.gif"></td>
+								<td align="center" width="100"><a class="menu_horizontal" href="configuracoes.html">Configurações</a></td>
+								<td align="center"><img src="imagens/divisor.gif"></td>
+								<td align="center" width="50">&nbsp;</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="trans_menu" style="z-index: 1000; height: 0px; overflow:hidden; position: absolute; visibility: hidden;" id="menu_1" onMouseOver="start('menu_1');" onMouseOut="saiu = 1;">
+										<div style="width: 100px; height: 16px;"></div>
+										<table cellpadding="2" cellspacing="0" border="0" bgcolor="#EFF2F5" style="filter: progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=5);  border: solid 1px #CADAE9;">
+											<tr>
+												<td></td>
+												<td></td>
+												<td><div style="font-size:3px;">&nbsp;</div></td>
+												<td></td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="form_mala.html"><img border="0" align="absmiddle" src="imagens/icone_mala_pq.gif"></a></td>
+												<td><a class="menu" href="form_mala.html">Nova&nbsp;Mala&nbsp;Direta</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="browser_malas.html"><img border="0" align="absmiddle" src="imagens/icone_browser_mala_pq.gif"></a></td>
+												<td><a class="menu" href="browser_malas.html">Malas&nbsp;Já&nbsp;Criadas</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="#" onClick="engine();"><img border="0" align="absmiddle" src="imagens/engine.gif"></a></td>
+												<td><a class="menu" href="#" onClick="engine();">Enviar&nbsp;Malas&nbsp;Agendadas&nbsp;Para&nbsp;Hoje</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td><div style="font-size:2px;">&nbsp;</div></td>
+												<td></td>
+											</tr>
+										</table>
+									</div>
+								</td>
+								<td></td>
+								<td>
+									<div class="trans_menu" style="z-index: 1000; height: 0px; overflow:hidden; position: absolute; visibility: hidden;" id="menu_2" onMouseOver="start('menu_2');" onMouseOut="saiu = 1;">
+										<div style="width: 100px; height: 16px;"></div>
+										<table cellpadding="2" cellspacing="0" border="0" bgcolor="#EFF2F5" style="filter: progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=5);  border: solid 1px #CADAE9;">
+											<tr>
+												<td></td>
+												<td></td>
+												<td><div style="font-size:3px;">&nbsp;</div></td>
+												<td></td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="browser_instituicoes.html"><img border="0" align="absmiddle" src="imagens/icone_instituicao_pq.gif"></a></td>
+												<td><a class="menu" href="browser_instituicoes.html">Instituições</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="browser_pessoas.html"><img border="0" align="absmiddle" src="imagens/icone_pessoa_pq.gif"></a></td>
+												<td><a class="menu" href="browser_pessoas.html">Pessoas</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="browser_segmentos.html"><img border="0" align="absmiddle" src="imagens/icone_segmento_pq.gif"></a></td>
+												<td><a class="menu" href="browser_segmentos.html">Segmentos&nbsp;de&nbsp;Mercado</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="browser_modelos.html"><img border="0" align="absmiddle" src="imagens/icone_modelo_pq.gif"></a></td>
+												<td><a class="menu" href="browser_modelos.html">Modelos&nbsp;de&nbsp;Mala&nbsp;Direta</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="browser_lembretes.html"><img border="0" align="absmiddle" src="imagens/icone_cal_pq.gif"></a></td>
+												<td><a class="menu" href="browser_lembretes.html">Lembretes</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr onMouseOver="this.style.backgroundColor = '#C7D8E8';" onMouseOut="this.style.backgroundColor = '';">
+												<td>&nbsp;</td>
+												<td width="16" align="center"><a class="menu" href="form_import.html"><img border="0" align="absmiddle" src="imagens/database_up_pq.gif"></a></td>
+												<td><a class="menu" href="form_import.html">Importação</a></td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td><div style="font-size:2px;">&nbsp;</div></td>
+												<td></td>
+											</tr>
+										</table>
+									</div>
+								</td>
+								<td></td>
+								<td><div class="trans_menu" id="menu_3" onMouseOver="start();" onMouseOut="saiu = 1;"></div></td>
+								<td></td>
+								<td width="50"></td>
+							</tr>
+							<tr>
+								<td colspan="5" height="5"></td> 
+							</tr>
+						</table>
+					</td>
+					<td background="imagens/rodape_cabecalho_3.gif">&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan="3" width="750">
+		<table width="100%" border="0">
+		<tr>
+			<td width="10">&nbsp;</td>
+			<td width="50"><a href="#" onClick="window.history.back();"><img title="Voltar" border="0" src="imagens/voltar.gif"></a></td>
+			<td width="10">&nbsp;</td>
+			<td align="left" valign="top">
+				<div style="font-family: Arial; font-size: 16px; font-weight: bold; position: absolute; color:#CCCCCC; z-index: 0; margin-top: 7px; margin-left: 2px;">Pessoas Cadastradas</div>
+				<div style="font-family: Arial; font-size: 16px; font-weight: bold; position: absolute; color:#0057F4; z-index:10; margin-top: 5px; margin-left: 0px;">Pessoas Cadastradas</div>
+			</td>
+			<td width="30"><a href="home.html"><img title="Pagina Inicial" border="0" src="imagens/home.gif"></a></td>
+			<td width="22"><a href="logout.html"><img title="Sair do Sistema" border="0" src="imagens/logout.gif"></a></td>
+		</tr>
+	</table>
+	<hr>
+	<br><br>
+		<table cellpadding="0" cellspacing="0" border="0" width="100%">
+		<tr>
+			<td width="30" height="28" background="imagens/canto_sup_esq_quadro_branco.gif"></td>
+			<td background="imagens/lateral_sup_quadro_branco.gif" valign="top">
+				<span style="font-size:9px;">&nbsp;</span><br>
+							</td>
+			<td width="29" background="imagens/canto_sup_dir_quadro_branco.gif"></td>
+		</tr>
+		<tr>
+			<td width="30" background="imagens/lateral_esq_quadro_branco.gif"></td>
+			<td bgcolor="#FFFFFF">
+		<table width="100%" cellpadding="2" cellspacing="2" border="0">
+		<form action="../external.html?link=http://localhost:8080/browser_pessoas.php" method="post">
+		<tr>
+			<td width="70" align="center">
+				<a title="Clique para adicionar uma nova pessoa" href="form_pessoa.html">
+					<img border="0" align="absmiddle" src="imagens/icone_pessoa_mais.gif">
+				</a>
+				<br>
+				<span style="font-size:9px;">Nova Pessoa</span>
+			</td>
+			<td width="50" class="label">Busca:</td>
+			<td width="150"><input type="text" name="busca" class="input_text" value=""></td>
+			<td width="100">
+				<select name="filtro">
+					<option value="nome_pessoa">Nome</option>
+					<option value="email_pessoa">Email</option>
+					<option value="nome_instituicao">Institui&ccedil;&atilde;o</option>
+					<option value="dt_nascimento_pessoa">Data de Nascimento</option>
+				</select>
+			</td>
+			<td width="70" class="label">Segmento:</td>
+			<td width="150">
+				<select name="segmento" style="width:100%;">
+				<option value=""></option>
+				<option value="3">Geral</option><option value="2">Movéis</option><option value="1">Textil</option></select>
+			</td>
+			<td width="20"><input type="image" src="imagens/lupa.gif"></td>
+			<td>&nbsp;</td>
+		</tr>
+		</form>
+	</table>
+			</td>
+			<td width="29" background="imagens/lateral_dir_quadro_branco.gif"></td>
+		</tr>
+		<tr>
+			<td width="30" height="27" background="imagens/canto_inf_esq_quadro_branco.gif"></td>
+			<td background="imagens/lateral_inf_quadro_branco.gif"></td>
+			<td width="29" height="27" background="imagens/canto_inf_dir_quadro_branco.gif"></td>
+		</tr>
+	</table>
+	<script language="javascript">
+	function apagar(id){
+		if(confirm("Deseja remover esta pessoa do sistema?"))
+			window.location = 'salva_pessoa5112.html?modo=apagar&amp;pagina=3&amp;id_pessoa=' + id + '&organizar=apagar&filtro=';
+	}
+</script>
+<div id="navtxt" class="navtext" style="position:absolute; top:-100px; left:0px; visibility:hidden"></div>
+	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+		<tr>
+			<td width="30" height="28" background="imagens/canto_sup_esq_quadro_branco.gif"></td>
+			<td background="imagens/lateral_sup_quadro_branco.gif" valign="top">
+				<span style="font-size:9px;">&nbsp;</span><br>
+							</td>
+			<td width="29" background="imagens/canto_sup_dir_quadro_branco.gif"></td>
+		</tr>
+		<tr>
+			<td width="30" background="imagens/lateral_esq_quadro_branco.gif"></td>
+			<td bgcolor="#FFFFFF">
+			<DIV ID="dek"></DIV>
+		<script language="javascript" src="infobox.js"></script>
+		<BR>
+		<table width="100%" class="conteudo_quadro_claro" border="0" cellpadding="2" cellspacing="0">
+			<tr style="background-color:#A6C1DC;">
+									<td width="3%" align="left">
+						<span class="cabec_tabela_browser">&nbsp;</span>					</td>
+									<td width="5%" align="left">
+						<span class="cabec_tabela_browser">&nbsp;</span>					</td>
+									<td width="25%" align="left">
+						<a class="cabec_tabela_browser" href="browser_pessoas25c4.html?&amp;organizar=nome_pessoa&amp;filtro=&amp;sentido=DESC">Nome</a>					</td>
+									<td width="20%" align="left">
+						<a class="cabec_tabela_browser" href="browser_pessoasd0e1.html?&amp;organizar=email_pessoa&amp;filtro=&amp;sentido=DESC">Email</a>					</td>
+									<td width="16%" align="center">
+						<a class="cabec_tabela_browser" href="browser_pessoas5d1a.html?&amp;organizar=dt_nascimento_pessoa&amp;filtro=&amp;sentido=DESC">Data&nbsp;Nascimento</a>					</td>
+									<td width="23%" align="left">
+						<a class="cabec_tabela_browser" href="browser_pessoasf5cc.html?&amp;organizar=nome_instituicao&amp;filtro=&amp;sentido=DESC">Instituição</a>					</td>
+									<td width="4%" align="center">
+						<a class="cabec_tabela_browser" href="browser_pessoas3fb2.html?&amp;organizar=recebe_email_pessoa&amp;filtro=&amp;sentido=DESC">Email?</a>					</td>
+									<td width="4%" align="right">
+						<a class="cabec_tabela_browser" style="color: #00FFFF;" href="browser_pessoas82b2.html?&amp;organizar=apagar&amp;filtro=&amp;sentido=DESC">&nbsp;&nbsp;<img border="0" align="absmiddle" src="imagens/sentido_asc.gif"></a>					</td>
+							</tr>
+			<tr>
+				<td colspan="8">&nbsp;</td>
+			</tr>
+								<tr style="background-color: #E6EDF7;" onMouseOver="this.style.backgroundColor = '#BACAEB'; popup('<div class=\'titulo_info_box\'>Segmentos</div>Textil');" onMouseOut="this.style.backgroundColor = '#E6EDF7'; kill();">
+					<td align="left" valign="top"><a title="Editar" href="form_pessoa2f2d.html?modo=update&amp;id_pessoa=46"><img border="0" src="imagens/editar.gif"></a></td><td align="left" valign="top"><a title="Copiar" href="#"><img border="0" src="imagens/copiar.gif"></a></td><td align="left" valign="top">Thiago Nascimento Barbosa</td><td align="left" valign="top">thiago.nascimento@example.com</td><td align="center" valign="top">29/12/1977</td><td align="left" valign="top">ACME Indústria e Comércio</td><td align="center" valign="top"><img border="0" title="Recebe Email" src="imagens/s.png"></td><td align="right" valign="top"><a href="javascript: apagar(46);"><img border="0" src="imagens/lixeira.gif"></a></td></tr>					<tr onMouseOver="this.style.backgroundColor = '#BACAEB'; popup('<div class=\'titulo_info_box\'>Segmentos</div>Textil');" onMouseOut="this.style.backgroundColor = ''; kill();">
+					<td align="left" valign="top"><a title="Editar" href="form_pessoaf001.html?modo=update&amp;id_pessoa=47"><img border="0" src="imagens/editar.gif"></a></td><td align="left" valign="top"><a title="Copiar" href="#"><img border="0" src="imagens/copiar.gif"></a></td><td align="left" valign="top">Thiago Santos Gomes</td><td align="left" valign="top">thiago.santos@example.com</td><td align="center" valign="top">25/07/1993</td><td align="left" valign="top">ACME Indústria e Comércio</td><td align="center" valign="top"><img border="0" title="Recebe Email" src="imagens/s.png"></td><td align="right" valign="top"><a href="javascript: apagar(47);"><img border="0" src="imagens/lixeira.gif"></a></td></tr>					<tr style="background-color: #E6EDF7;" onMouseOver="this.style.backgroundColor = '#BACAEB'; popup('<div class=\'titulo_info_box\'>Segmentos</div>Movéis');" onMouseOut="this.style.backgroundColor = '#E6EDF7'; kill();">
+					<td align="left" valign="top"><a title="Editar" href="form_pessoa73d9.html?modo=update&amp;id_pessoa=48"><img border="0" src="imagens/editar.gif"></a></td><td align="left" valign="top"><a title="Copiar" href="#"><img border="0" src="imagens/copiar.gif"></a></td><td align="left" valign="top">Alexandre Frota Souto</td><td align="left" valign="top">alexandre.frota@example.com</td><td align="center" valign="top">21/03/1978</td><td align="left" valign="top">Móveis XPTO</td><td align="center" valign="top"><img border="0" title="Recebe Email" src="imagens/s.png"></td><td align="right" valign="top"><a href="javascript: apagar(48);"><img border="0" src="imagens/lixeira.gif"></a></td></tr>					<tr onMouseOver="this.style.backgroundColor = '#BACAEB'; popup('<div class=\'titulo_info_box\'>Segmentos</div>Movéis');" onMouseOut="this.style.backgroundColor = ''; kill();">
+					<td align="left" valign="top"><a title="Editar" href="form_pessoa6852.html?modo=update&amp;id_pessoa=49"><img border="0" src="imagens/editar.gif"></a></td><td align="left" valign="top"><a title="Copiar" href="#"><img border="0" src="imagens/copiar.gif"></a></td><td align="left" valign="top">Aline Barbosa Oliveira</td><td align="left" valign="top">aline.barbosa@example.com</td><td align="center" valign="top">22/10/1989</td><td align="left" valign="top">Móveis XPTO</td><td align="center" valign="top"><img border="0" title="Recebe Email" src="imagens/s.png"></td><td align="right" valign="top"><a href="javascript: apagar(49);"><img border="0" src="imagens/lixeira.gif"></a></td></tr>					<tr style="background-color: #E6EDF7;" onMouseOver="this.style.backgroundColor = '#BACAEB'; popup('<div class=\'titulo_info_box\'>Segmentos</div>Textil');" onMouseOut="this.style.backgroundColor = '#E6EDF7'; kill();">
+					<td align="left" valign="top"><a title="Editar" href="form_pessoa29a1.html?modo=update&amp;id_pessoa=5"><img border="0" src="imagens/editar.gif"></a></td><td align="left" valign="top"><a title="Copiar" href="#"><img border="0" src="imagens/copiar.gif"></a></td><td align="left" valign="top">Ana Andrade Machado</td><td align="left" valign="top">ana.andrade@example.com</td><td align="center" valign="top">11/03/1974</td><td align="left" valign="top">ACME Indústria e Comércio</td><td align="center" valign="top"><img border="0" title="Recebe Email" src="imagens/s.png"></td><td align="right" valign="top"><a href="javascript: apagar(5);"><img border="0" src="imagens/lixeira.gif"></a></td></tr>					<tr onMouseOver="this.style.backgroundColor = '#BACAEB'; popup('<div class=\'titulo_info_box\'>Segmentos</div>Movéis');" onMouseOut="this.style.backgroundColor = ''; kill();">
+					<td align="left" valign="top"><a title="Editar" href="form_pessoa30cc.html?modo=update&amp;id_pessoa=50"><img border="0" src="imagens/editar.gif"></a></td><td align="left" valign="top"><a title="Copiar" href="#"><img border="0" src="imagens/copiar.gif"></a></td><td align="left" valign="top">André Sanches Malta</td><td align="left" valign="top">andre.sanches@example.com</td><td align="center" valign="top">07/04/1982</td><td align="left" valign="top">Móveis XPTO</td><td align="center" valign="top"><img border="0" title="Recebe Email" src="imagens/s.png"></td><td align="right" valign="top"><a href="javascript: apagar(50);"><img border="0" src="imagens/lixeira.gif"></a></td></tr>					<tr style="background-color: #E6EDF7;" onMouseOver="this.style.backgroundColor = '#BACAEB'; popup('<div class=\'titulo_info_box\'>Segmentos</div>Movéis');" onMouseOut="this.style.backgroundColor = '#E6EDF7'; kill();">
+					<td align="left" valign="top"><a title="Editar" href="form_pessoaef2f.html?modo=update&amp;id_pessoa=51"><img border="0" src="imagens/editar.gif"></a></td><td align="left" valign="top"><a title="Copiar" href="#"><img border="0" src="imagens/copiar.gif"></a></td><td align="left" valign="top">Arthur Bernardes Neto</td><td align="left" valign="top">arthur.bernardes@example.com</td><td align="center" valign="top">16/07/1972</td><td align="left" valign="top">Móveis XPTO</td><td align="center" valign="top"><img border="0" title="Recebe Email" src="imagens/s.png"></td><td align="right" valign="top"><a href="javascript: apagar(51);"><img border="0" src="imagens/lixeira.gif"></a></td></tr>					<tr onMouseOver="this.style.backgroundColor = '#BACAEB'; popup('<div class=\'titulo_info_box\'>Segmentos</div>Movéis');" onMouseOut="this.style.backgroundColor = ''; kill();">
+					<td align="left" valign="top"><a title="Editar" href="form_pessoa34af.html?modo=update&amp;id_pessoa=52"><img border="0" src="imagens/editar.gif"></a></td><td align="left" valign="top"><a title="Copiar" href="#"><img border="0" src="imagens/copiar.gif"></a></td><td align="left" valign="top">Beatriz Amaral Cruz</td><td align="left" valign="top">beatriz.amaral@example.com</td><td align="center" valign="top">31/03/1990</td><td align="left" valign="top">Móveis XPTO</td><td align="center" valign="top"><img border="0" title="Recebe Email" src="imagens/s.png"></td><td align="right" valign="top"><a href="javascript: apagar(52);"><img border="0" src="imagens/lixeira.gif"></a></td></tr>					<tr style="background-color: #E6EDF7;" onMouseOver="this.style.backgroundColor = '#BACAEB'; popup('<div class=\'titulo_info_box\'>Segmentos</div>Movéis');" onMouseOut="this.style.backgroundColor = '#E6EDF7'; kill();">
+					<td align="left" valign="top"><a title="Editar" href="form_pessoa94b5.html?modo=update&amp;id_pessoa=53"><img border="0" src="imagens/editar.gif"></a></td><td align="left" valign="top"><a title="Copiar" href="#"><img border="0" src="imagens/copiar.gif"></a></td><td align="left" valign="top">Caio Temer Franco</td><td align="left" valign="top">caio.temer@example.com</td><td align="center" valign="top">28/06/1987</td><td align="left" valign="top">Móveis XPTO</td><td align="center" valign="top"><img border="0" title="Recebe Email" src="imagens/s.png"></td><td align="right" valign="top"><a href="javascript: apagar(53);"><img border="0" src="imagens/lixeira.gif"></a></td></tr>					<tr onMouseOver="this.style.backgroundColor = '#BACAEB'; popup('<div class=\'titulo_info_box\'>Segmentos</div>Movéis');" onMouseOut="this.style.backgroundColor = ''; kill();">
+					<td align="left" valign="top"><a title="Editar" href="form_pessoa72cf.html?modo=update&amp;id_pessoa=54"><img border="0" src="imagens/editar.gif"></a></td><td align="left" valign="top"><a title="Copiar" href="#"><img border="0" src="imagens/copiar.gif"></a></td><td align="left" valign="top">Camila Pires Rezende</td><td align="left" valign="top">camila.pires@example.com</td><td align="center" valign="top">13/05/1997</td><td align="left" valign="top">Móveis XPTO</td><td align="center" valign="top"><img border="0" title="Recebe Email" src="imagens/s.png"></td><td align="right" valign="top"><a href="javascript: apagar(54);"><img border="0" src="imagens/lixeira.gif"></a></td></tr>					<tr style="background-color: #E6EDF7;" onMouseOver="this.style.backgroundColor = '#BACAEB'; popup('<div class=\'titulo_info_box\'>Segmentos</div>Movéis');" onMouseOut="this.style.backgroundColor = '#E6EDF7'; kill();">
+					<td align="left" valign="top"><a title="Editar" href="form_pessoa2714.html?modo=update&amp;id_pessoa=55"><img border="0" src="imagens/editar.gif"></a></td><td align="left" valign="top"><a title="Copiar" href="#"><img border="0" src="imagens/copiar.gif"></a></td><td align="left" valign="top">Carlos Eduardo Vieira</td><td align="left" valign="top">carlos.eduardo@example.com</td><td align="center" valign="top">15/06/1994</td><td align="left" valign="top">Móveis XPTO</td><td align="center" valign="top"><img border="0" title="Recebe Email" src="imagens/s.png"></td><td align="right" valign="top"><a href="javascript: apagar(55);"><img border="0" src="imagens/lixeira.gif"></a></td></tr>					<tr onMouseOver="this.style.backgroundColor = '#BACAEB'; popup('<div class=\'titulo_info_box\'>Segmentos</div>Movéis');" onMouseOut="this.style.backgroundColor = ''; kill();">
+					<td align="left" valign="top"><a title="Editar" href="form_pessoad08d.html?modo=update&amp;id_pessoa=56"><img border="0" src="imagens/editar.gif"></a></td><td align="left" valign="top"><a title="Copiar" href="#"><img border="0" src="imagens/copiar.gif"></a></td><td align="left" valign="top">Carolina Nogueira Lins</td><td align="left" valign="top">carolina.nogueira@example.com</td><td align="center" valign="top">28/12/1985</td><td align="left" valign="top">Móveis XPTO</td><td align="center" valign="top"><img border="0" title="Recebe Email" src="imagens/s.png"></td><td align="right" valign="top"><a href="javascript: apagar(56);"><img border="0" src="imagens/lixeira.gif"></a></td></tr>					<tr style="background-color: #E6EDF7;" onMouseOver="this.style.backgroundColor = '#BACAEB'; popup('<div class=\'titulo_info_box\'>Segmentos</div>Movéis');" onMouseOut="this.style.backgroundColor = '#E6EDF7'; kill();">
+					<td align="left" valign="top"><a title="Editar" href="form_pessoaba4e.html?modo=update&amp;id_pessoa=57"><img border="0" src="imagens/editar.gif"></a></td><td align="left" valign="top"><a title="Copiar" href="#"><img border="0" src="imagens/copiar.gif"></a></td><td align="left" valign="top">Clarice Bernardes</td><td align="left" valign="top">clarice.bernardes@example.com</td><td align="center" valign="top">05/12/1994</td><td align="left" valign="top">Móveis XPTO</td><td align="center" valign="top"><img border="0" title="Recebe Email" src="imagens/s.png"></td><td align="right" valign="top"><a href="javascript: apagar(57);"><img border="0" src="imagens/lixeira.gif"></a></td></tr>					<tr onMouseOver="this.style.backgroundColor = '#BACAEB'; popup('<div class=\'titulo_info_box\'>Segmentos</div>Movéis');" onMouseOut="this.style.backgroundColor = ''; kill();">
+					<td align="left" valign="top"><a title="Editar" href="form_pessoad24a.html?modo=update&amp;id_pessoa=58"><img border="0" src="imagens/editar.gif"></a></td><td align="left" valign="top"><a title="Copiar" href="#"><img border="0" src="imagens/copiar.gif"></a></td><td align="left" valign="top">Daniel Cavalcanti Luz</td><td align="left" valign="top">daniel.cavalcanti@example.com</td><td align="center" valign="top">06/10/1986</td><td align="left" valign="top">Móveis XPTO</td><td align="center" valign="top"><img border="0" title="Recebe Email" src="imagens/s.png"></td><td align="right" valign="top"><a href="javascript: apagar(58);"><img border="0" src="imagens/lixeira.gif"></a></td></tr>					<tr style="background-color: #E6EDF7;" onMouseOver="this.style.backgroundColor = '#BACAEB'; popup('<div class=\'titulo_info_box\'>Segmentos</div>Movéis');" onMouseOut="this.style.backgroundColor = '#E6EDF7'; kill();">
+					<td align="left" valign="top"><a title="Editar" href="form_pessoa3a50.html?modo=update&amp;id_pessoa=59"><img border="0" src="imagens/editar.gif"></a></td><td align="left" valign="top"><a title="Copiar" href="#"><img border="0" src="imagens/copiar.gif"></a></td><td align="left" valign="top">Daniela Dorneles Vaz</td><td align="left" valign="top">daniela.dorneles@example.com</td><td align="center" valign="top">26/01/1988</td><td align="left" valign="top">Móveis XPTO</td><td align="center" valign="top"><img border="0" title="Recebe Email" src="imagens/s.png"></td><td align="right" valign="top"><a href="javascript: apagar(59);"><img border="0" src="imagens/lixeira.gif"></a></td></tr>					<tr onMouseOver="this.style.backgroundColor = '#BACAEB'; popup('<div class=\'titulo_info_box\'>Segmentos</div>Textil');" onMouseOut="this.style.backgroundColor = ''; kill();">
+					<td align="left" valign="top"><a title="Editar" href="form_pessoa7f45.html?modo=update&amp;id_pessoa=6"><img border="0" src="imagens/editar.gif"></a></td><td align="left" valign="top"><a title="Copiar" href="#"><img border="0" src="imagens/copiar.gif"></a></td><td align="left" valign="top">Beatriz Fernandes Pereira</td><td align="left" valign="top">beatriz.fernandes@example.com</td><td align="center" valign="top">17/01/2003</td><td align="left" valign="top">ACME Indústria e Comércio</td><td align="center" valign="top"><img border="0" title="Recebe Email" src="imagens/s.png"></td><td align="right" valign="top"><a href="javascript: apagar(6);"><img border="0" src="imagens/lixeira.gif"></a></td></tr>					<tr style="background-color: #E6EDF7;" onMouseOver="this.style.backgroundColor = '#BACAEB'; popup('<div class=\'titulo_info_box\'>Segmentos</div>Movéis');" onMouseOut="this.style.backgroundColor = '#E6EDF7'; kill();">
+					<td align="left" valign="top"><a title="Editar" href="form_pessoa88f0.html?modo=update&amp;id_pessoa=60"><img border="0" src="imagens/editar.gif"></a></td><td align="left" valign="top"><a title="Copiar" href="#"><img border="0" src="imagens/copiar.gif"></a></td><td align="left" valign="top">Diego Carvalho Pinto</td><td align="left" valign="top">diego.carvalho@example.com</td><td align="center" valign="top">14/02/1988</td><td align="left" valign="top">Móveis XPTO</td><td align="center" valign="top"><img border="0" title="Recebe Email" src="imagens/s.png"></td><td align="right" valign="top"><a href="javascript: apagar(60);"><img border="0" src="imagens/lixeira.gif"></a></td></tr>					<tr onMouseOver="this.style.backgroundColor = '#BACAEB'; popup('<div class=\'titulo_info_box\'>Segmentos</div>Movéis');" onMouseOut="this.style.backgroundColor = ''; kill();">
+					<td align="left" valign="top"><a title="Editar" href="form_pessoae8fd.html?modo=update&amp;id_pessoa=61"><img border="0" src="imagens/editar.gif"></a></td><td align="left" valign="top"><a title="Copiar" href="#"><img border="0" src="imagens/copiar.gif"></a></td><td align="left" valign="top">Douglas Richa Frota</td><td align="left" valign="top">douglas.richa@example.com</td><td align="center" valign="top">08/11/1978</td><td align="left" valign="top">Móveis XPTO</td><td align="center" valign="top"><img border="0" title="Recebe Email" src="imagens/s.png"></td><td align="right" valign="top"><a href="javascript: apagar(61);"><img border="0" src="imagens/lixeira.gif"></a></td></tr>					<tr style="background-color: #E6EDF7;" onMouseOver="this.style.backgroundColor = '#BACAEB'; popup('<div class=\'titulo_info_box\'>Segmentos</div>Movéis');" onMouseOut="this.style.backgroundColor = '#E6EDF7'; kill();">
+					<td align="left" valign="top"><a title="Editar" href="form_pessoa6e54.html?modo=update&amp;id_pessoa=62"><img border="0" src="imagens/editar.gif"></a></td><td align="left" valign="top"><a title="Copiar" href="#"><img border="0" src="imagens/copiar.gif"></a></td><td align="left" valign="top">Eduardo Junqueira Paz</td><td align="left" valign="top">eduardo.junqueira@example.com</td><td align="center" valign="top">03/07/1974</td><td align="left" valign="top">Móveis XPTO</td><td align="center" valign="top"><img border="0" title="Recebe Email" src="imagens/s.png"></td><td align="right" valign="top"><a href="javascript: apagar(62);"><img border="0" src="imagens/lixeira.gif"></a></td></tr>					<tr onMouseOver="this.style.backgroundColor = '#BACAEB'; popup('<div class=\'titulo_info_box\'>Segmentos</div>Movéis');" onMouseOut="this.style.backgroundColor = ''; kill();">
+					<td align="left" valign="top"><a title="Editar" href="form_pessoa7987.html?modo=update&amp;id_pessoa=63"><img border="0" src="imagens/editar.gif"></a></td><td align="left" valign="top"><a title="Copiar" href="#"><img border="0" src="imagens/copiar.gif"></a></td><td align="left" valign="top">Fernando Rocha Silva</td><td align="left" valign="top">fernando.rocha@example.com</td><td align="center" valign="top">30/07/1982</td><td align="left" valign="top">Móveis XPTO</td><td align="center" valign="top"><img border="0" title="Recebe Email" src="imagens/s.png"></td><td align="right" valign="top"><a href="javascript: apagar(63);"><img border="0" src="imagens/lixeira.gif"></a></td></tr>		</table><br><div style="text-align:right;"><span style="color:#FF0000">97</span>&nbsp;Registros Encontrados</div>
+		<br>
+		<div style="width: 100%; text-align: center;">
+			<a href="browser_pessoas8132.html?pagina=2&amp;organizar=apagar&amp;filtro="><img align="absmiddle" title="Voltar" border="0" src="imagens/voltar2.gif"></a>  <a class="menu" href="browser_pessoas4af8.html?pagina=1&amp;organizar=apagar&amp;filtro=">1</a>  <a class="menu" href="browser_pessoas8132.html?pagina=2&amp;organizar=apagar&amp;filtro=">2</a> <b class="menu" style="color: #FF0000;">3</b> <a class="menu" href="browser_pessoased93.html?pagina=4&amp;organizar=apagar&amp;filtro=">4</a>  <a class="menu" href="browser_pessoasd726.html?pagina=5&amp;organizar=apagar&amp;filtro=">5</a>  <a href="browser_pessoased93.html?pagina=4&amp;organizar=apagar&amp;filtro="><img align="absmiddle" title="Avançar" border="0" src="imagens/avancar.gif"></a>		</div>
+				</td>
+			<td width="29" background="imagens/lateral_dir_quadro_branco.gif"></td>
+		</tr>
+		<tr>
+			<td width="30" height="27" background="imagens/canto_inf_esq_quadro_branco.gif"></td>
+			<td background="imagens/lateral_inf_quadro_branco.gif"></td>
+			<td width="29" height="27" background="imagens/canto_inf_dir_quadro_branco.gif"></td>
+		</tr>
+	</table>
+	<script language="javascript">
+	document.forms[0].elements[0].focus();
+</script>
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan="3" height="46" background="imagens/rodape.jpg" align="center">
+						Desenvolvido por <a href="https://leonardo-vasconcellos.vercel.app/">Leonardo Lima de Vasconcellos</a>
+					</td>
+					<td height="46" background="imagens/rodape.jpg">&nbsp;</td>
+				</tr>
+			</table>
+		</body>
+	
+<!-- Mirrored from localhost:8080/browser_pessoas.php?pagina=3&organizar=apagar&filtro= by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jun 2026 13:43:30 GMT -->
+</html>
+	
