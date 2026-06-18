@@ -1,6 +1,6 @@
 <?php
 $senhadigitada = trim($_POST["senha"]);
-$URL = "http://" . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']) . "/";
+$URL = "http://" . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']);
 include("funcoes.php");
 
 $senha = trim(retorna_config("senha"));
