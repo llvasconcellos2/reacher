@@ -36,7 +36,8 @@ inicia_quadro_branco('width="100%"', ''); ?>
 
 $query = "SELECT ";
 $query .= " CONCAT('<a title=\"Editar\" href=\"form_modelo.php?modo=update&id_modelo=', id_modelo , '\"><img border=\"0\" src=\"imagens/editar.gif\"></a>') as editar,";
-$query .= " CONCAT('<a title=\"Copiar\" href=\"form_modelo.php?modo=copiar&id_modelo=', id_modelo , '\"><img border=\"0\" src=\"imagens/copiar.gif\"></a>') as copiar,";
+// $query .= " CONCAT('<a title=\"Copiar\" href=\"form_modelo.php?modo=copiar&id_modelo=', id_modelo , '\"><img border=\"0\" src=\"imagens/copiar.gif\"></a>') as copiar,";
+$query .= " CONCAT('<a title=\"Copiar\" href=\"#\"><img border=\"0\" src=\"imagens/copiar.gif\"></a>') as copiar,";
 $query .= "nome_modelo,";
 $query .= " CONCAT('<xmp>', LEFT(css_modelo,50) , '</xmp>') as css_modelo,";
 $query .= " CONCAT('<xmp>', LEFT(html_modelo,50) , '</xmp>') as html_modelo,";

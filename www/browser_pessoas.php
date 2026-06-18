@@ -55,7 +55,8 @@ inicia_quadro_branco('width="100%"', ''); ?>
 
 $query = "SELECT ";
 $query .= " CONCAT('<a title=\"Editar\" href=\"form_pessoa.php?modo=update&id_pessoa=', p.id_pessoa , '\"><img border=\"0\" src=\"imagens/editar.gif\"></a>') as editar,";
-$query .= " CONCAT('<a title=\"Copiar\" href=\"form_pessoa.php?modo=copiar&id_pessoa=', p.id_pessoa , '\"><img border=\"0\" src=\"imagens/copiar.gif\"></a>') as copiar,";
+// $query .= " CONCAT('<a title=\"Copiar\" href=\"form_pessoa.php?modo=copiar&id_pessoa=', p.id_pessoa , '\"><img border=\"0\" src=\"imagens/copiar.gif\"></a>') as copiar,";
+$query .= " CONCAT('<a title=\"Copiar\" href=\"#\"><img border=\"0\" src=\"imagens/copiar.gif\"></a>') as copiar,";
 $query .= "p.nome_pessoa, p.email_pessoa, DATE_FORMAT(p.dt_nascimento_pessoa,'%d/%m/%Y') as dt_nascimento_pessoa, ";
 $query .= "CASE p.id_instituicao WHEN '0' THEN 'Pessoa Fisica' ELSE i.nome_instituicao END as nome_instituicao, ";
 $query .= " CASE p.recebe_email_pessoa WHEN 'n' THEN '<img border=\"0\" title=\"Não recebe email\" src=\"imagens/n.png\">' WHEN 's' THEN '<img border=\"0\" title=\"Recebe Email\" src=\"imagens/s.png\">' END as recebe_email_pessoa,";

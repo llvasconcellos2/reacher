@@ -55,7 +55,8 @@ inicia_quadro_branco('width="100%"', '');
 
 $query = "SELECT ";
 $query .= " CONCAT('<a title=\"Editar\" href=\"form_instituicao.php?modo=update&id_instituicao=', i.id_instituicao , '\"><img border=\"0\" src=\"imagens/editar.gif\"></a>') as editar,";
-$query .= " CONCAT('<a title=\"Copiar\" href=\"form_instituicao.php?modo=copiar&id_instituicao=', i.id_instituicao , '\"><img border=\"0\" src=\"imagens/copiar.gif\"></a>') as copiar,";
+// $query .= " CONCAT('<a title=\"Copiar\" href=\"form_instituicao.php?modo=copiar&id_instituicao=', i.id_instituicao , '\"><img border=\"0\" src=\"imagens/copiar.gif\"></a>') as copiar,";
+$query .= " CONCAT('<a title=\"Copiar\" href=\"#\"><img border=\"0\" src=\"imagens/copiar.gif\"></a>') as copiar,";
 $query .= "i.nome_instituicao, i.telefone_instituicao, i.cidade_instituicao, i.estado_instituicao, i.cep_instituicao,  ";
 $query .= "CONCAT('<a href=\"javascript: apagar(', i.id_instituicao , ');\"><img border=\"0\" src=\"imagens/lixeira.gif\"></a>') as apagar,";
 $query .= "CONCAT('<div class=\'titulo_info_box\'>Segmentos</div>', GROUP_CONCAT(s.nome_segmento SEPARATOR '<br>')) as info_box";

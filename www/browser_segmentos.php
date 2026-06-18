@@ -34,7 +34,8 @@ inicia_quadro_branco('width="100%"', ''); ?>
 
 $query = "SELECT ";
 $query .= " CONCAT('<a title=\"Editar\" href=\"form_segmento.php?modo=update&id_segmento=', id_segmento , '\"><img border=\"0\" src=\"imagens/editar.gif\"></a>') as editar,";
-$query .= " CONCAT('<a title=\"Copiar\" href=\"form_segmento.php?modo=copiar&id_segmento=', id_segmento , '\"><img border=\"0\" src=\"imagens/copiar.gif\"></a>') as copiar,";
+// $query .= " CONCAT('<a title=\"Copiar\" href=\"form_segmento.php?modo=copiar&id_segmento=', id_segmento , '\"><img border=\"0\" src=\"imagens/copiar.gif\"></a>') as copiar,";
+$query .= " CONCAT('<a title=\"Copiar\" href=\"#\"><img border=\"0\" src=\"imagens/copiar.gif\"></a>') as copiar,";
 $query .= "nome_segmento, ";
 $query .= "CONCAT('<a href=\"javascript: apagar(', id_segmento , ');\"><img border=\"0\" src=\"imagens/lixeira.gif\"></a>') as apagar";
 $query .= " from segmentos ";

@@ -89,15 +89,31 @@ foreach($_SESSION["csv"] as $dados){
 			foreach ($dados as $chave => $valor){
 				 $query .= ", " . trim($chave);
 			}
+			if(!array_key_exists("dt_nao_recebe_email", $dados)){
+				$query .= ",dt_nao_recebe_email";
+			}
 			
 			$query .= ") VALUES (" . trim($id_instituicao) . ",";
 			
 			$i = 1;
 			foreach($dados as $chave => $valor){
-				$query .= "'" . trim($valor) . "'";
+				if($chave == "dt_nascimento_pessoa"){
+					$valor = trim($valor);
+					if(empty($valor)) $query .= "NULL";
+					else{
+						$partes = split("/", $valor);
+						$query .= "'" . $partes[2] . "-" . $partes[1] . "-" . $partes[0] . "'";
+					}
+				}
+				else $query .= "'" . trim($valor) . "'";
 				if($i != count($dados)) $query .= ",";
 				$i++;
 			}
+
+			if(!array_key_exists("dt_nao_recebe_email", $dados)){
+				$query .=  ",NOW()";
+			}
+			
 			
 			$query .= ");";
 	

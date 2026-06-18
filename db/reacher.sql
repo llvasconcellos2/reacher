@@ -86,7 +86,7 @@ CREATE TABLE IF NOT EXISTS `lembretes` (
   `texto` text collate latin1_general_ci NOT NULL,
   `data` varchar(12) collate latin1_general_ci NOT NULL default '0000-00-00',
   `status` tinyint(4) NOT NULL default '1',
-  `ultimo_envio` date NOT NULL default '0000-00-00',
+  `ultimo_envio` date NOT NULL default '1000-01-01',
   PRIMARY KEY  (`id_lembrete`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=1 ;
 
