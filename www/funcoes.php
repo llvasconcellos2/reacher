@@ -177,7 +177,7 @@ function termina_pagina(){
 				</tr>
 				<tr>
 					<td colspan="3" height="46" background="imagens/rodape.jpg" align="center">
-						
+						Desenvolvido por <a href="https://leonardo-vasconcellos.vercel.app/">Leonardo Lima de Vasconcellos</a>
 					</td>
 					<td height="46" background="imagens/rodape.jpg">&nbsp;</td>
 				</tr>
