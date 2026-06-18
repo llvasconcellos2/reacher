@@ -16,7 +16,7 @@ class editorHTML{
 		echo('oEdit1.height="' . $altura . '";' . chr(10));
 		echo('oEdit1.btnFlash=true;' . chr(10));
 		echo('oEdit1.btnMedia=true;' . chr(10));
-		echo("oEdit1.cmdAssetManager='/assetmanager/assetmanager.php';" . chr(10));
+		echo("oEdit1.cmdAssetManager='';" . chr(10));
 		echo('oEdit1.RENDER(document.getElementById("temp_conteudo").innerHTML);' . chr(10));
 		echo('</script>');
 	}

@@ -1,6 +1,6 @@
 /***********************************************************
 InnovaStudio WYSIWYG Editor 2.2
-Copyright © 2003-2005, INNOVA STUDIO (www.InnovaStudio.com). All rights reserved.
+Copyright ï¿½ 2003-2005, INNOVA STUDIO (www.InnovaStudio.com). All rights reserved.
 ************************************************************/
 
 var editor = new Array();
@@ -3017,6 +3017,7 @@ function makeDisabled(btn)
 //===================================
 
 function getSelectedElement(sel) {
+    if (!sel || sel.rangeCount == 0) return null;
     var range = sel.getRangeAt(0);
     var node = range.startContainer;
     if (node.nodeType == Node.ELEMENT_NODE) {
@@ -3034,8 +3035,9 @@ function getSelectedElement(sel) {
 }
 
 function isTextSelected(sel) {
+    if (!sel || sel.rangeCount == 0) return false;
     var range = sel.getRangeAt(0);
-    
+
     if (range!=null && range.startContainer!=null) {
         return (range.startContainer.nodeType == Node.TEXT_NODE);
     }

@@ -86,8 +86,8 @@ function realTime()
     var oElement = window.opener.getSelectedElement(oSel);
     
     clearAllProperties()
-    
-    if(oElement.tagName=="IMG")
+
+    if(oElement && oElement.tagName=="IMG")
         {
         
         var range = oEditor.document.createRange();
@@ -287,11 +287,11 @@ function doUpdate()
     var oSel=oEditor.getSelection();
 
     var oElement = window.opener.getSelectedElement(oSel);
-    
-    if (oElement.tagName=="IMG")
+
+    if (oElement && oElement.tagName=="IMG")
         {
         window.opener.oUtil.obj.saveForUndo();
-        
+
         oElement.setAttribute("SRC", inpImgURL.value);
         oElement.setAttribute("ALT", inpImgAlt.value);
         oElement.setAttribute("ALIGN", inpImgAlign.value);
@@ -408,10 +408,10 @@ function resetImageSize()
     var oSel=oEditor.getSelection();
     var oElement = window.opener.getSelectedElement(oSel);
 
-    if (oElement.tagName=="IMG")
+    if (oElement && oElement.tagName=="IMG")
         {
         window.opener.oUtil.obj.saveForUndo();
-        
+
         oElement.style.width="";
         oElement.style.height="";
         oElement.removeAttribute("WIDTH",0);
