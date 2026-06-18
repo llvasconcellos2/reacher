@@ -1,0 +1,25 @@
+services:
+  db:
+    image: mysql:5.7
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: vertrigo
+      MYSQL_DATABASE: reacher
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./db/reacher.sql:/docker-entrypoint-initdb.d/reacher.sql:ro
+    ports:
+      - "3306:3306"
+
+  web:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      - db
+    volumes:
+      - ./www:/var/www/html
+    ports:
+      - "8080:80"
+
+volumes:
+  db_data:
