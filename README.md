@@ -65,6 +65,15 @@ Campaigns were composed in a custom in-browser WYSIWYG HTML editor (with separat
 
 On the measurement side, every sent campaign embedded a tracking pixel to record opens (with unique-view counts) and was checked against a dedicated bounce mailbox via IMAP — addresses that hard-bounced were automatically flagged and excluded from future sends. Together with the SpamAssassin pre-check, this gave the business a closed loop: score, segment, send, measure, and clean — years before "email deliverability" was a line item most businesses budgeted for.
 
+<!-- KEY FEATURES -->
+### Key Features
+
+- **Spam-score pre-flight checks** — Every campaign was scored against a heuristic spam-filter rule set before sending, catching deliverability-killing patterns up front so messages reached inboxes instead of spam folders.
+- **Segmented campaign targeting** — A structured contact database linking people to institutions and market segments let a single mailing hit a precise audience rather than a blanket blast, lifting relevance and response.
+- **Closed-loop tracking and list hygiene** — Open tracking and automated bounce handling flagged and excluded dead addresses on their own, giving the business a measure-and-clean cycle years ahead of the market.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- SCREENSHOTS -->
 ## Screenshots
 
